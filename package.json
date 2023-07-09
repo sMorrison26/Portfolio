@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && next export"
+    "deploy": "next build && next export",
+    "predeploy": "npm run build",
+    "postdeploy": "gh-pages -d out"
   },
   "dependencies": {
     "@types/node": "20.3.3",
