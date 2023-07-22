@@ -11,7 +11,7 @@ export default function Custom404(){
                     <div className="flex justify-self-center mb-6">
                         <Link href={'../'}><Image src="/Icon.png" width={75} height={75} alt="Sean's Icon" /></Link>
                     </div>
-                    <Link href={'../'}><h2 className='w-screen h-fit'>Oops! The page you are looking for can't be found</h2></Link>
+                    <Link href={'../'}><h2 className='w-screen h-fit'>Oops! The page you are looking for can&apos;t be found</h2></Link>
                 </div>
             </div>
         </>
