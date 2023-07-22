@@ -21,9 +21,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/images*": ["./src/assets/images"]
-
-      
+      "@/images/*": ["./src/assets/images/*"]
     },
   },
   "include": [
@@ -35,13 +33,3 @@
     "node_modules"
   ]
 }
-
-// {
-//   "compilerOptions": {
-//       "baseUrl": ".",
-//       "paths": {
-//           "@/images*": ["./src/assets/images*"],
-//           "@/components*": ["./src/components*"]
-//       }
-//   }
-// }
