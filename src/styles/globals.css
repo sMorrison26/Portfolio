@@ -130,3 +130,60 @@ a {
   font-family: Virtual;
   src: url('/fonts/Virtual-Regulat.otf') format("opentype");
 }
+
+/* .box {
+  background-image: linear-gradient(to top, transparent, rgb(33, 103, 208)), linear-gradient(75.8deg, rgb(0, 208, 255), rgb(84, 84, 239), rgb(164, 127, 226));
+  width: 80%;
+  height: 75%;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgb(256,256,256,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-size: 100% 100%, 2000% 100%;
+  animation: gradient 5s infinite;
+} */
+.box img {
+  scale: 1.5;
+}
+.box img:nth-child(1){
+  padding-right: 20px;
+}
+.box img:nth-child(2){
+  padding-left: 20px;
+}
+@keyframes gradient {
+  from {backgroud-position: center center, left center;}
+  to {background-position: center center, right center;}
+} 
+/* .deg_icon {
+  display: flex;
+  justify-content: space-evenly;
+} */
+.wind_precip {
+  padding: 20px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10%;
+}
+.wind {
+  background: linear-gradient(rgb(120, 120, 194,0.5),rgb(63, 150, 221,0.8));
+  border: 3px solid rgb(0, 0, 0,0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgb(256,256,256,0.5);
+  padding: 20px;
+}
+.precip {
+  background: linear-gradient(rgb(120, 120, 194,0.5),rgb(63, 150, 221,0.8));
+  border: 3px solid rgb(0, 0, 0,0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgb(256,256,256,0.5);
+  padding: 20px
+}
+.deg {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 100;
+}
+

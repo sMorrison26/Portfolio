@@ -1,4 +1,4 @@
-import Footer from "@/components/footer/footer.component";
+// import Footer from "@/components/footer/footer.component";
 export default function Construction(){
     return (
         <div className="flex justify-center items-center flex-col bg-gradient-to-tr from-purple-500 to-purple-900 h-screen text-text-white">
