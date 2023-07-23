@@ -17,6 +17,9 @@ module.exports = {
       },
       fontFamily: {
         virtual: "virtual"
+      },
+      screens: {
+        'xs': '280px'
       }
     }
   },
