@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <Link href="https://seanm.tech/" className="flex items-center mb-4 sm:mb-0">
                         <Image src="/Icon.png" alt="Logo" width={32} height={32} className="h-8 mr-3" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Sean's Portfolio</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Sean&apos;s Portfolio</span>
                     </Link>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0">
                         <li>

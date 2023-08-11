@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from 'next/image';
 export default function Header() {
     return (
         <>
@@ -56,7 +56,7 @@ export default function Header() {
             <nav className="bg-gray-900 border-gray-200">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="https://seanm.tech/" className="flex items-center">
-                        <img src="/Icon.png" className="h-8 mr-3" alt="Logo" />
+                        <Image src="/Icon.png" className="h-8 mr-3" alt="Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap text-text-white">Sean Morrison</span>
                     </a>
                     <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -68,16 +68,16 @@ export default function Header() {
                     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray-900">
                             <li>
-                                <a href="https://seanm.tech" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:bg-transparent md:hover:text-purple-500 md:p-0 md:hover:bg-transparent" aria-current="page">Home</a>
+                                <Link href="https://seanm.tech" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:bg-transparent md:hover:text-purple-500 md:p-0 md:hover:bg-transparent" aria-current="page">Home</Link>
                             </li>
                             <li>
-                                <a href="/projects" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:border-0 md:hover:text-purple-500 md:p-0 md:hover:bg-transparent">Projects</a>
+                                <Link href="/projects" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:border-0 md:hover:text-purple-500 md:p-0 md:hover:bg-transparent">Projects</Link>
                             </li>
                             <li>
-                                <a href="/about" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:border-0 md:hover:text-purple-500 md:p-0 md:hover:bg-transparent">About</a>
+                                <Link href="/about" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:border-0 md:hover:text-purple-500 md:p-0 md:hover:bg-transparent">About</Link>
                             </li>
                             <li>
-                                <a href="/contact" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:border-0 md:hover:text-purple-500 md:p-0 md:hover:bg-transparent">Contact</a>
+                                <Link href="/contact" className="block py-2 pl-3 pr-4 text-text-white rounded hover:bg-gray-700 md:border-0 md:hover:text-purple-500 md:p-0 md:hover:bg-transparent">Contact</Link>
                             </li>
                         </ul>
                     </div>
