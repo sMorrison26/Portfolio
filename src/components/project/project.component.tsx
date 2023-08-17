@@ -13,7 +13,7 @@ export default function Project({ props }) {
                 <div className="sm:shrink-0">
                     <div className='mx-auto flex items-center justify-center'>
                         <div className='rounded-md bg-gradient-to-b from-text-white via-purple-600 to-purple-800 p-1 h-56 sm:h-96 w-56 sm:w-96 mx-8 sm:mx-16 my-4 sm:my-8'>
-                            <Link href={props.link} as='image'>
+                            <Link href={props.link} target='_blank'>
                                 <div className='rounded-md h-full w-full bg-slate-900 relative overflow-hidden'>
                                     <Image
                                         className='object-cover'
