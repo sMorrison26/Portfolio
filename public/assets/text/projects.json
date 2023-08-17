@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Intro to ITWS - Personal Website",
+        "description": "Introduction to IT & Web Science \n - Rensselaer Polytechnic Institute - \nA personal website that lists projects and labs completed in this class",
+        "link": "http://morris10rpi.eastus.cloudapp.azure.com",
+        "imagesrc": "/assets/images/itws-personal-snap.png",
+        "alt": "ITWS Personal Website"
+    }
+]

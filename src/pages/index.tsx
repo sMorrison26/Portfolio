@@ -14,7 +14,7 @@ export default function Home() {
           </Link>
         </div>
         <div className='w-full max-w-screen-xl mx-auto p-4 md:py-8'>  
-          <p className='text-xl md:text-4xl bg-clip-text bg-gradient-to-r from-text-white to-purple-700 text-transparent font-bold leading-relaxed'>
+          <p className='text-xl w-fit md:text-4xl bg-clip-text bg-gradient-to-r from-text-white to-purple-700 text-transparent font-bold leading-relaxed'>
             Hi, I&apos;m Sean. <br />
             Passionate web developer. <br />
             Focusing in secure web design. <br />
@@ -33,7 +33,7 @@ export default function Home() {
           </Link>
         </div>
         <div className='w-full max-w-screen-xl mx-auto p-4 md:py-8'>
-          <p className='text-xl md:text-4xl bg-clip-text bg-gradient-to-r from-text-white to-purple-700 text-transparent font-bold leading-relaxed'>
+          <p className='text-xl w-fit md:text-4xl bg-clip-text bg-gradient-to-r from-text-white to-purple-700 text-transparent font-bold leading-relaxed'>
             View my past projects. <br />
           </p>
         </div>
