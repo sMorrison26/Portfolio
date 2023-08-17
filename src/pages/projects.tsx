@@ -10,9 +10,9 @@ export default function Projects() {
         async function fetchData() {
             try {
                 const encodedPath = btoa('/assets/text/projects.json');
-                const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/getJson?path=${encodedPath}`;
+                const apiUrl = `api/getJson?path=${encodedPath}`;
                 const response = await fetch(apiUrl);
-                console.log(response);
+                // console.log(response);
                 const data = await response.json();
                 // console.log(data);
                 setProjectsList(data);
