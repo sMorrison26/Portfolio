@@ -52,9 +52,9 @@ export default function Projects() {
                     ))}
                 </ul>
             </div>
-            <div className='flex justify-around sm:my-8 w-full max-w-[14rem] sm:max-w-[24rem]'>
+            <div className='flex justify-between sm:my-8 w-full max-w-[14rem] sm:max-w-[24rem]'>
                 <button className='group bg-slate-900 rounded-md shadow py-1 px-2 disabled:bg-slate-600 disabled:text-gray-500' onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
-                    <span className='group-disabled:hidden'>&larr;</span> Previous
+                    <span className='group-disabled:hidden'>&larr;</span> Prev
                 </button>
                 <p className='text-xs self-center'>{currentPage}/{projectsList.length}</p>
                 <button className='group bg-slate-900 rounded shadow py-1 px-2 disabled:bg-slate-600 disabled:text-gray-500' onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage >= projectsList.length}>
