@@ -6,7 +6,7 @@ export default function Layout({children}){
         <div className="flex flex-col min-h-screen bg-gradient-to-b from-zinc-800 to-gray-700">
             <Header />
             {/* <main className="flex-grow bg-sky-300">{children}</main> */}
-            <div>{children}</div>
+            <div className="flex-grow">{children}</div>
             <Footer />
         </div>
     )

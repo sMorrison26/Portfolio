@@ -10,9 +10,9 @@ export default function Projects() {
         async function fetchData() {
             try {
                 const encodedPath = btoa('/assets/text/projects.json');
-                const apiUrl = `/api/getJson?path=${encodedPath}`;
+                const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/getJson?path=${encodedPath}`;
                 const response = await fetch(apiUrl);
-                // console.log(response);
+                console.log(response);
                 const data = await response.json();
                 // console.log(data);
                 setProjectsList(data);
@@ -36,7 +36,7 @@ export default function Projects() {
             <div className="p-4 w-full min-h-full mt-12 md:mt-24">
                 <ul>
                     {visibileItems.map(item => (
-                        <li key={item.name}>
+                        <li key={currentPage}>
                             <Project props={item} />
                         </li>
                     ))}
