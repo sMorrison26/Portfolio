@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from '../styles/CharityFinder.module.css'
 import $ from 'jquery';
-import axios from 'axios';
 
 const CharityFinder: React.FC = () => {
 
@@ -108,7 +107,7 @@ const CharityFinder: React.FC = () => {
     useEffect(() => {
         resetDivs();
         loadDiscover();
-        handleTabClick('Discover');
+        // handleTabClick('Discover');
     }, []);
 
 

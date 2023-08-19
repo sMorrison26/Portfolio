@@ -33,4 +33,4 @@ Custom500.getLayout = function getLayout(page: ReactElement) {
     )
 }
 
-export default 500
+export default Custom500
