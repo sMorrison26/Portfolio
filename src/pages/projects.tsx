@@ -6,7 +6,7 @@ import { encode } from 'punycode';
 import Layout from '@/components/layout/layout.component';
 
 const Projects: NextPageWithLayout = () => {
-
+    
     const [projectsList, setProjectsList] = useState([]);
     const [showDiv,setShowDiv] = useState(true);
 
@@ -76,4 +76,3 @@ Projects.getLayout = function getLayout(page: ReactElement){
     )
 }
 export default Projects
-//TODO: I should find a way to edit an outer file that cannot be modified by outside people

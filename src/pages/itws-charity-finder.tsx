@@ -40,8 +40,6 @@ const CharityFinder: React.FC = () => {
             const apiUrl = `api/getJson?path=${encodedPath}`;
             const response = await fetch(apiUrl);
             const responseData = await response.json();
-            // const response = await axios.get('/team4.json');
-            // const responseData = response.data;
 
             const charityGroups = {
                 "International Needs": [],
