@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import Layout from '@/components/layout/layout.component';
+import type { ReactElement } from 'react';
+import type { NextPageWithLayout } from './_app';
+import React from 'react';
 
-export default function Custom404(){
+const Custom404: NextPageWithLayout = () => {
     return (
         <div className=' text-text-white mb-5'>
             <div className='grid grid-rows-2 pt-24 text-center m-4'>
@@ -22,3 +26,11 @@ export default function Custom404(){
         </div>
     );
 }
+Custom404.getLayout = function getLayout(page: ReactElement){
+    return (
+        <Layout title="404">
+            {page}
+        </Layout>
+    )
+}
+export default Custom404

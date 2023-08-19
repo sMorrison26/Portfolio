@@ -1,11 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import Image from 'next/image';
-export default function Header() {
+
+type Props = {
+    title?: string
+}
+
+export default function Header({title = 'Portfolio'}: Props) {
+    const titleValue = `${title} | Sean Morrison`;
     return (
         <>
             <Head>
-                <title>Portfolio | Sean Morrison</title>
+                <title>{titleValue}</title>
                 <meta property="og:title" content="Sean Morrison" key="title" />
                 <meta name="description" content="Portfolio | Sean Morrison" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

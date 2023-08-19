@@ -1,9 +1,16 @@
 [
     {
         "name": "Intro to ITWS - Personal Website",
-        "description": "Introduction to IT & Web Science \n - Rensselaer Polytechnic Institute - \nA personal website that lists projects and labs completed in this class",
+        "description": "Introduction to IT & Web Science - Rensselaer Polytechnic Institute - A personal website that lists projects and labs completed in this class",
         "link": "http://morris10rpi.eastus.cloudapp.azure.com",
         "imagesrc": "/assets/images/itws-personal-snap.png",
         "alt": "ITWS Personal Website"
+    },
+    {
+        "name": "Intro to ITWS - Charity Finder",
+        "description": "Introduction to IT & Web Science - Rensselaer Polytechnic Institute - Final Project - A solution to helping young donors find charities that they care about",
+        "link": "/itws-charity-finder",
+        "imagesrc": "/assets/images/itws-charity-finder.png",
+        "alt": "ITWS Charity Finder"
     }
 ]

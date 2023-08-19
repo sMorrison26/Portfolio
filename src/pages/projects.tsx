@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import Project from '../components/project/project.component'
+import type { ReactElement } from 'react';
+import type { NextPageWithLayout } from './_app';
 import { encode } from 'punycode';
+import Layout from '@/components/layout/layout.component';
 
-export default function Projects() {
+const Projects: NextPageWithLayout = () => {
 
     const [projectsList, setProjectsList] = useState([]);
     const [showDiv,setShowDiv] = useState(true);
@@ -65,5 +68,12 @@ export default function Projects() {
         // <div className='flex-1 bg-sky-900 h-full'>p</div>
     );
 }
-
+Projects.getLayout = function getLayout(page: ReactElement){
+    return (
+        <Layout title="Projects">
+            {page}
+        </Layout>
+    )
+}
+export default Projects
 //TODO: I should find a way to edit an outer file that cannot be modified by outside people
