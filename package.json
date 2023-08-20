@@ -30,8 +30,9 @@
   "devDependencies": {
     "@types/jquery": "^3.5.16",
     "autoprefixer": "^10.4.14",
+    "eslint-config-prettier": "^9.0.0",
     "postcss": "^8.4.26",
-    "prettier": "^3.0.0",
+    "prettier": "3.0.2",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "tailwindcss": "^3.3.3"
   }
