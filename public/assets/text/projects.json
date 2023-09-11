@@ -12,5 +12,12 @@
     "link": "/itws-charity-finder",
     "imagesrc": "/assets/images/itws-charity-finder.png",
     "alt": "ITWS Charity Finder"
+  },
+  {
+    "name": "Web Systems Development - Resume Website",
+    "description": "Web Systems Development - Rensselaer Polytechnic Institute - As of 9/8/23, a team website that showcases our resumes",
+    "link": "http://team4-itws2110.eastus.cloudapp.azure.com",
+    "imagesrc": "/assets/images/itws2110.png",
+    "alt": "Resume Website"
   }
 ]
