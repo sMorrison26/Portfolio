@@ -8,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        purples: "#5f43b2",
-        "dark-purple": "#3a3153",
-        "text-white": "#fefdfd",
+        "theme-1": "#3a015c",
+        "theme-2": "#32004f",
+        "theme-3": "#32004f",
+        "theme-4": "#190028",
+        "theme-5": "#11001c",
       },
       fontFamily: {
         virtual: "virtual",

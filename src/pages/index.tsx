@@ -1,52 +1,31 @@
-import Link from "next/link";
 import Layout from "../components/layout/layout.component";
 import type { ReactElement } from "react";
 import type { NextPageWithLayout } from "./_app";
-// import Image from 'next/image'
-// import styles from '@/styles/Home.module.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Home: NextPageWithLayout = () => {
   return (
-    <>
-      <div className="p-6 h-fit">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <Link href="/about" className="text-xl">
-            <h4 className="text-white inline-block group transition">
-              About{" "}
-              <span className="inline-block transform transition-transform translate-x-0 group-hover:translate-x-2">
-                &rarr;
-              </span>
-            </h4>
-          </Link>
-        </div>
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <p className="text-xl w-fit md:text-4xl bg-clip-text bg-gradient-to-r from-text-white to-purple-700 text-transparent font-bold leading-relaxed">
-            Hi, I&apos;m Sean. <br />
-            Passionate web developer. <br />
-            Focusing in secure web design. <br />
-            Hand crafted web apps. <br />
-            Every. Single. Time.
-          </p>
-        </div>
+
+    <div className="max-w-screen-xl flex flex-col justify-between p-4 h-full mx-auto">
+      <div className="flex justify-between mt-24">
+        <p className="text-6xl sm:text-9xl bg-clip-text bg-gradient-to-r from-white to-theme-2 text-transparent font-bold">
+          Hi, I&apos;m<br /> Sean.
+        </p>
+        <img src="/assets/images/headshot.png" className="object-cover w-[20%] h-full rounded-full shadow-2xl shadow-theme-1"></img>
       </div>
-      <div className="p-6 h-fit">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <Link href="/projects" className="text-xl">
-            <h4 className="text-white inline-block group transition-pl">
-              Projects{" "}
-              <span className="inline-block transform transition-transform translate-x-0 group-hover:translate-x-2">
-                &rarr;
-              </span>
-            </h4>
-          </Link>
-        </div>
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <p className="text-xl w-fit md:text-4xl bg-clip-text bg-gradient-to-r from-text-white to-purple-700 text-transparent font-bold leading-relaxed">
-            View my past projects. <br />
-          </p>
-        </div>
+      <div className="italic self-center">
+        <p className="text-justify">
+          Passionate. Experienced. Driven.
+        </p>
+        <p>
+          Web Development. Cybersecurity.
+        </p>
       </div>
-    </>
+      <FontAwesomeIcon icon={faAngleDown} style={{ color: "#ffffff", height: '64px' }} className="animate-bounce hover:animate-none hover:cursor-pointer w-fit self-center" />
+    </div>
+
+
   );
 };
 Home.getLayout = function getLayout(page: ReactElement) {
