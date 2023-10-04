@@ -1,23 +1,41 @@
 [
   {
-    "name": "Intro to ITWS - Personal Website",
-    "description": "Introduction to IT & Web Science - Rensselaer Polytechnic Institute - A personal website that lists projects and labs completed in this class",
-    "link": "http://morris10rpi.eastus.cloudapp.azure.com",
-    "imagesrc": "/assets/images/itws-personal-snap.png",
-    "alt": "ITWS Personal Website"
+    "title": "Intro to IT & Web Science - Rensselaer Polytechnic Institute",
+    "projects": [
+      {
+        "name": "Personal Website",
+        "description": "A personal website that lists projects and labs completed in this class",
+        "link": "http://morris10rpi.eastus.cloudapp.azure.com",
+        "imagesrc": "/assets/images/itws-personal-snap.png",
+      },
+      {
+        "name": "Charity Finder",
+        "description": "Final Project - A solution to helping young donors find charities that they care about",
+        "link": "/itws-charity-finder",
+        "imagesrc": "/assets/images/itws-charity-finder.png",
+      },
+    ]
   },
   {
-    "name": "Intro to ITWS - Charity Finder",
-    "description": "Introduction to IT & Web Science - Rensselaer Polytechnic Institute - Final Project - A solution to helping young donors find charities that they care about",
-    "link": "/itws-charity-finder",
-    "imagesrc": "/assets/images/itws-charity-finder.png",
-    "alt": "ITWS Charity Finder"
+    "title": "Web Systems Development - Rensselaer Polytechnic Institute",
+    "projects": [
+      {
+        "name": "Resume Website",
+        "description": "As of 9/8/23, a team website that showcases our resumes",
+        "link": "https://team4-itws2110.eastus.cloudapp.azure.com",
+        "imagesrc": "/assets/images/itws2110.png",
+      }
+    ]
   },
   {
-    "name": "Web Systems Development - Resume Website",
-    "description": "Web Systems Development - Rensselaer Polytechnic Institute - As of 9/8/23, a team website that showcases our resumes",
-    "link": "http://team4-itws2110.eastus.cloudapp.azure.com",
-    "imagesrc": "/assets/images/itws2110.png",
-    "alt": "Resume Website"
-  }
+    "title": "Sean's Projects",
+    "projects": [
+      {
+        "name": "This Website!",
+        "description": "Fully self-taught, hand crafted web app to showcase my achievements",
+        "link": "https://seanm.tech",
+        "imagesrc": "/assets/images/headshot.png"
+      }
+    ]
+  }   
 ]
