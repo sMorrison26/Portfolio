@@ -26,7 +26,7 @@
     "flowbite": "^1.8.1",
     "gh-pages": "^5.0.0",
     "jquery": "^3.7.0",
-    "next": "13.4.8",
+    "next": "13.5.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
