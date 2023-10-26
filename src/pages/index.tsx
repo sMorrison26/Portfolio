@@ -3,7 +3,7 @@ import type { ReactElement } from "react";
 import type { NextPageWithLayout } from "./_app";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Home: NextPageWithLayout = () => {
   return (
