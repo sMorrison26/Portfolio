@@ -3,6 +3,7 @@ import type { ReactElement } from "react";
 import type { NextPageWithLayout } from "./_app";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -12,7 +13,7 @@ const Home: NextPageWithLayout = () => {
         <p className="text-6xl sm:text-9xl bg-clip-text bg-gradient-to-r from-white to-theme-1 text-transparent font-bold">
           Hi, I&apos;m<br /> Sean.
         </p>
-        <img src="/assets/images/headshot.png" className="object-cover w-[20%] h-full rounded-full shadow-2xl shadow-theme-1"></img>
+        <Image src="/assets/images/headshot.png" className="object-cover w-[20%] h-full rounded-full shadow-2xl shadow-theme-1" alt="Sean headshot"></Image>
       </div>
       <div className="italic self-center mt-24">
         <p className="text-justify">

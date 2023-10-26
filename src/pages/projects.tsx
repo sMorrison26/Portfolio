@@ -9,6 +9,8 @@ const Projects: NextPageWithLayout = () => {
 
   //project data
   const [projectsList, setProjectsList] = useState([]);
+  
+  const [projectGroup, setProjectGroup] = useState(0);
 
   //get project data
   useEffect(() => {
@@ -34,11 +36,11 @@ const Projects: NextPageWithLayout = () => {
       <div id="projects" className="max-w-screen-lg">
       
         {projectsList.map((item) => (
-          <div className="flex flex-col mt-6">
+          <div key={item.title} className="flex flex-col mt-6">
             <div className="w-full py-2">
               <p className="text-3xl font- font-extralight">{item.title}</p>
             </div>
-            <div key={item.title} className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {item.projects.map((proj: any) => (
                 <Project key={proj.name} props={proj} />
               ))}
