@@ -5,7 +5,7 @@
       {
         "name": "Personal Website",
         "description": "A personal website that lists projects and labs completed in this class",
-        "link": "http://morris10rpi.eastus.cloudapp.azure.com",
+        "link": "https://morris10rpi.eastus.cloudapp.azure.com",
         "imagesrc": "/assets/images/itws-personal-snap.png"
       },
       {
@@ -20,10 +20,16 @@
     "title": "Web Systems Development - Rensselaer Polytechnic Institute",
     "projects": [
       {
-        "name": "Resume Website",
-        "description": "As of 9/8/23, a team website that showcases our resumes",
+        "name": "Team Website",
+        "description": "Website that showcases our resumes and other labs completed in class",
         "link": "https://team4-itws2110.eastus.cloudapp.azure.com",
         "imagesrc": "/assets/images/itws2110.png"
+      },
+      {
+        "name": "Constitution App",
+        "description": "A web app that showcases the first 10 amendments and 7 articles of the constitution",
+        "link": "https://team4-itws2110.eastus.cloudapp.azure.com/constitution/constitution.html",
+        "imagesrc": "/assets/images/constitution.webp"
       }
     ]
   },
@@ -34,7 +40,7 @@
         "name": "This Website!",
         "description": "Fully self-taught, hand crafted web app to showcase my achievements",
         "link": "https://seanm.tech",
-        "imagesrc": "/assets/images/headshot.png"
+        "imagesrc": "/assets/images/seanm.webp" 
       }
     ]
   }   

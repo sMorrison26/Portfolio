@@ -9,12 +9,12 @@ const Home: NextPageWithLayout = () => {
 
     <div className="max-w-screen-xl flex flex-col justify-between p-4 h-full mx-auto">
       <div className="flex justify-between mt-24">
-        <p className="text-6xl sm:text-9xl bg-clip-text bg-gradient-to-r from-white to-theme-2 text-transparent font-bold">
+        <p className="text-6xl sm:text-9xl bg-clip-text bg-gradient-to-r from-white to-theme-1 text-transparent font-bold">
           Hi, I&apos;m<br /> Sean.
         </p>
         <img src="/assets/images/headshot.png" className="object-cover w-[20%] h-full rounded-full shadow-2xl shadow-theme-1"></img>
       </div>
-      <div className="italic self-center">
+      <div className="italic self-center mt-24">
         <p className="text-justify">
           Passionate. Experienced. Driven.
         </p>
@@ -22,7 +22,7 @@ const Home: NextPageWithLayout = () => {
           Web Development. Cybersecurity.
         </p>
       </div>
-      <FontAwesomeIcon icon={faAngleDown} style={{ color: "#ffffff", height: '64px' }} className="animate-bounce hover:animate-none hover:cursor-pointer w-fit self-center" />
+      {/* <FontAwesomeIcon icon={faAngleDown} style={{ color: "#ffffff", height: '64px' }} className="animate-bounce hover:animate-none hover:cursor-pointer w-fit self-center mt-24" /> */}
     </div>
 
 
