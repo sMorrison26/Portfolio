@@ -1,5 +1,16 @@
 [
   {
+    "title": "Sean's Projects",
+    "projects": [
+      {
+        "name": "This Website!",
+        "description": "Fully self-taught, hand crafted web app to showcase my achievements",
+        "link": "https://seanm.tech",
+        "imagesrc": "/assets/images/seanm.webp" 
+      }
+    ]
+  },
+  {
     "title": "Intro to IT & Web Science - Rensselaer Polytechnic Institute",
     "projects": [
       {
@@ -30,17 +41,12 @@
         "description": "A web app that showcases the first 10 amendments and 7 articles of the constitution",
         "link": "https://team4-itws2110.eastus.cloudapp.azure.com/constitution/constitution.html",
         "imagesrc": "/assets/images/constitution.webp"
-      }
-    ]
-  },
-  {
-    "title": "Sean's Projects",
-    "projects": [
+      },
       {
-        "name": "This Website!",
-        "description": "Fully self-taught, hand crafted web app to showcase my achievements",
-        "link": "https://seanm.tech",
-        "imagesrc": "/assets/images/seanm.webp" 
+        "name": "Film Finder",
+        "description": "An app that helps you find the streaming service streaming that movie or show",
+        "link": "https://team4-itws2110.eastus.cloudapp.azure.com/filmFinder",
+        "imagesrc": "/assets/images/filmFinder.webp"
       }
     ]
   }   

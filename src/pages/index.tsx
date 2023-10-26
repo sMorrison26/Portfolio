@@ -9,11 +9,11 @@ const Home: NextPageWithLayout = () => {
   return (
 
     <div className="max-w-screen-xl flex flex-col justify-between p-4 h-full mx-auto">
-      <div className="flex justify-between mt-24">
+      <div className="flex justify-between mt-24 h-full">
         <p className="text-6xl sm:text-9xl bg-clip-text bg-gradient-to-r from-white to-theme-1 text-transparent font-bold">
           Hi, I&apos;m<br /> Sean.
         </p>
-        <Image src="/assets/images/headshot.png" className="object-cover w-[20%] h-full rounded-full shadow-2xl shadow-theme-1" alt="Sean headshot"></Image>
+        <img src="/assets/images/headshot.png" className="object-cover w-[20%] rounded-full shadow-2xl shadow-theme-1" alt="Sean headshot" />
       </div>
       <div className="italic self-center mt-24">
         <p className="text-justify">
