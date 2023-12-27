@@ -17,13 +17,13 @@
         "name": "Personal Website",
         "description": "A personal website that lists projects and labs completed in this class",
         "link": "https://morris10rpi.eastus.cloudapp.azure.com",
-        "imagesrc": "/assets/images/itws-personal-snap.png"
+        "imagesrc": "/assets/images/itws-personal-snap.webp"
       },
       {
         "name": "Charity Finder",
         "description": "Final Project - A solution to helping young donors find charities that they care about",
         "link": "/itws-charity-finder",
-        "imagesrc": "/assets/images/itws-charity-finder.png"
+        "imagesrc": "/assets/images/itws-charity-finder.webp"
       }
     ]
   },
@@ -34,7 +34,7 @@
         "name": "Team Website",
         "description": "Website that showcases our resumes and other labs completed in class",
         "link": "https://team4-itws2110.eastus.cloudapp.azure.com",
-        "imagesrc": "/assets/images/itws2110.png"
+        "imagesrc": "/assets/images/itws2110.webp"
       },
       {
         "name": "Constitution App",
