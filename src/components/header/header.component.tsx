@@ -30,7 +30,7 @@ export default function Header({ title = "Portfolio" }: Props) {
             <Link href={"./projects"} className="m-4 hover:underline hover:shadow-lg hover:shadow-theme-1">Projects</Link>
           </div>
           <div className="flex w-1/4 justify-end">
-            <Link href={'./construction'} className="hover:underline hover:shadow-lg hover:shadow-theme-1 bg-transparent">Contact </Link>
+            <Link href={'./contact'} className="hover:underline hover:shadow-lg hover:shadow-theme-1 bg-transparent">Contact </Link>
           </div>
         </div>
       </nav>

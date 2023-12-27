@@ -118,7 +118,7 @@ const CharityFinder: React.FC = () => {
       <div className={styles.itwsCharityFinder}>
         <div id="head" className={styles.Head}>
           <Image
-            src="/assets/images/smile.png"
+            src="/assets/images/smile.webp"
             alt="smileyface"
             height={35}
             width={35}
@@ -226,7 +226,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.unitedway.org/">
                 <Image
-                  src="/assets/images/unitedway.png"
+                  src="/assets/images/unitedway.webp"
                   alt="United Way"
                   height={115}
                   width={250}
@@ -245,7 +245,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.feedingamerica.org/">
                 <Image
-                  src="/assets/images/feedingamerica.png"
+                  src="/assets/images/feedingamerica.webp"
                   alt="Feeding America"
                   height={115}
                   width={250}
@@ -264,7 +264,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.salvationarmy.org">
                 <Image
-                  src="/assets/images/salvationarmy.png"
+                  src="/assets/images/salvationarmy.webp"
                   alt="Salvation Army"
                   height={115}
                   width={250}
@@ -283,7 +283,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.stjude.org">
                 <Image
-                  src="/assets/images/saintjude.png"
+                  src="/assets/images/saintjude.webp"
                   alt="Saint Jude"
                   height={115}
                   width={250}
@@ -357,7 +357,7 @@ const CharityFinder: React.FC = () => {
             <div className="flex justify-between mx-auto w-3/5 mt-4">
               <a href="https://www.linkedin.com/in/sean-morrison-2a7201217/">
                 <Image
-                  src="/assets/images/sean.png"
+                  src="/assets/images/sean.webp"
                   alt="Sean Morrison"
                   width={145}
                   height={175}
@@ -366,7 +366,7 @@ const CharityFinder: React.FC = () => {
               </a>
               <a href="https://www.linkedin.com/in/finley-holohan-337386251/">
                 <Image
-                  src="/assets/images/finn.jpg"
+                  src="/assets/images/finn.webp"
                   alt="Finn Holohan"
                   width={145}
                   height={175}
@@ -375,7 +375,7 @@ const CharityFinder: React.FC = () => {
               </a>
               <a href="https://www.linkedin.com/in/chris-choi-906844251/">
                 <Image
-                  src="/assets/images/chris.png"
+                  src="/assets/images/chris.webp"
                   alt="Chris Choi"
                   width={145}
                   height={175}

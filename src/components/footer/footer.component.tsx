@@ -10,7 +10,7 @@ export default function Footer() {
             className="flex items-center mb-4 sm:mb-0"
           >
             <Image
-              src="/Icon.png"
+              src="/Icon.webp"
               alt="Logo"
               width={32}
               height={32}
