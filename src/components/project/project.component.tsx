@@ -1,5 +1,5 @@
-import Image from "next/legacy/image";
-import Link from "next/link";
+import Image from 'next/legacy/image'
+import Link from 'next/link'
 
 export default function Project({ props }) {
   //props takes a title, an image, a link, a description, image alt too

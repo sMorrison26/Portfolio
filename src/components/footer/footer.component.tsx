@@ -1,5 +1,5 @@
-import Image from "next/legacy/image";
-import Link from "next/link";
+import Image from 'next/legacy/image'
+import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="bg-gray-900 rounded-lg shadow m-4">

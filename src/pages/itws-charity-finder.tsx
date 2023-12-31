@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/legacy/image";
-import styles from "../styles/CharityFinder.module.css";
-import $ from "jquery";
+import React, { useState, useEffect } from 'react'
+import Image from 'next/legacy/image'
+import styles from '../styles/CharityFinder.module.css'
+import $ from 'jquery'
 
 const CharityFinder: React.FC = () => {
   const [charities, setCharities] = useState({

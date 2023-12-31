@@ -1,6 +1,6 @@
-import Header from "../header/header.component";
-import Footer from "../footer/footer.component";
-import { ReactNode } from "react";
+import Header from '../header/header.component'
+// import Footer from '../footer/footer.component'
+import { ReactNode } from 'react'
 
 type Props = {
   title?: string;

@@ -1,9 +1,6 @@
-import Layout from "../components/layout/layout.component";
-import type { ReactElement } from "react";
-import type { NextPageWithLayout } from "./_app";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/legacy/image";
+import Layout from '../components/layout/layout.component'
+import type { ReactElement } from 'react'
+import type { NextPageWithLayout } from './_app'
 
 const Home: NextPageWithLayout = () => {
   return (
