@@ -9,7 +9,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const Contact: NextPageWithLayout = () => {
   return(
     <div className="max-w-screen-xl flex flex-col p-4 h-full mx-auto w-full">
-      <div className="text-2xl sm:text-3xl md:text-4xl mx-auto mb-4">
+      <div className="text-center text-2xl sm:text-3xl md:text-4xl mx-auto mb-4">
         <p>Let&apos;s make something great together!</p>
       </div>
       <div className="md:text-xl sm:w-3/4 md:w-4/5 lg:w-1/2 border border-purple-600 sm:mx-auto">
