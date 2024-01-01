@@ -14,10 +14,10 @@ const Contact: NextPageWithLayout = () => {
       </div>
       <div className="md:text-xl sm:w-3/4 md:w-4/5 lg:w-1/2 border border-purple-600 sm:mx-auto">
         <div className="flex justify-between w-1/2 mx-auto p-4 text-xl sm:text-2xl md:text-3xl ">
-          <a className='hover:text-purple-400 transition delay-75' href='https://www.linkedin.com/in/sean-morrison-2a7201217/'>
+          <a className='hover:text-purple-400 transition delay-75' href='https://www.linkedin.com/in/sean-morrison-2a7201217/' aria-label='See my LinkedIn profile'>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a className='hover:text-purple-400 transition delay-75' href='https://github.com/sMorrison26/'>
+          <a className='hover:text-purple-400 transition delay-75' href='https://github.com/sMorrison26/' aria-label='See my GitHub profile'>
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
