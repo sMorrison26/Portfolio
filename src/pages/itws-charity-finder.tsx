@@ -1,7 +1,16 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/legacy/image";
-import styles from "../styles/CharityFinder.module.css";
-import $ from "jquery";
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+import smileyFace from '@/images/smile.webp'
+import unitedWay from '@/images/unitedway.webp'
+import feedingAmerica from '@/images/feedingamerica.webp'
+import salvationArmy from '@/images/salvationarmy.webp'
+import saintJude from '@/images/saintjude.webp'
+import directRelief from '@/images/directrelief.webp'
+import seanHeadshot from '@/images/sean.webp'
+import finnHeadshot from '@/images/finn.webp'
+import chrisHeadshot from '@/images/chris.webp'
+import styles from '../styles/CharityFinder.module.css'
+import $ from 'jquery'
 
 const CharityFinder: React.FC = () => {
   const [charities, setCharities] = useState({
@@ -110,7 +119,6 @@ const CharityFinder: React.FC = () => {
   useEffect(() => {
     resetDivs();
     loadDiscover();
-    // handleTabClick('Discover');
   }, []);
 
   return (
@@ -118,7 +126,7 @@ const CharityFinder: React.FC = () => {
       <div className={styles.itwsCharityFinder}>
         <div id="head" className={styles.Head}>
           <Image
-            src="/assets/images/smile.webp"
+            src={smileyFace}
             alt="smileyface"
             height={35}
             width={35}
@@ -226,7 +234,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.unitedway.org/">
                 <Image
-                  src="/assets/images/unitedway.webp"
+                  src={unitedWay}
                   alt="United Way"
                   height={115}
                   width={250}
@@ -245,7 +253,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.feedingamerica.org/">
                 <Image
-                  src="/assets/images/feedingamerica.webp"
+                  src={feedingAmerica}
                   alt="Feeding America"
                   height={115}
                   width={250}
@@ -264,7 +272,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.salvationarmy.org">
                 <Image
-                  src="/assets/images/salvationarmy.webp"
+                  src={salvationArmy}
                   alt="Salvation Army"
                   height={115}
                   width={250}
@@ -283,7 +291,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.stjude.org">
                 <Image
-                  src="/assets/images/saintjude.webp"
+                  src={saintJude}
                   alt="Saint Jude"
                   height={115}
                   width={250}
@@ -303,7 +311,7 @@ const CharityFinder: React.FC = () => {
             <p className={`${styles.charity} flex flex-col items-center`}>
               <a href="https://www.directrelief.org">
                 <Image
-                  src="/assets/images/directrelief.webp"
+                  src={directRelief}
                   alt="Direct Relief"
                   height={115}
                   width={250}
@@ -357,7 +365,7 @@ const CharityFinder: React.FC = () => {
             <div className="flex justify-between mx-auto w-3/5 mt-4">
               <a href="https://www.linkedin.com/in/sean-morrison-2a7201217/">
                 <Image
-                  src="/assets/images/sean.webp"
+                  src={seanHeadshot}
                   alt="Sean Morrison"
                   width={145}
                   height={175}
@@ -366,7 +374,7 @@ const CharityFinder: React.FC = () => {
               </a>
               <a href="https://www.linkedin.com/in/finley-holohan-337386251/">
                 <Image
-                  src="/assets/images/finn.webp"
+                  src={finnHeadshot}
                   alt="Finn Holohan"
                   width={145}
                   height={175}
@@ -375,7 +383,7 @@ const CharityFinder: React.FC = () => {
               </a>
               <a href="https://www.linkedin.com/in/chris-choi-906844251/">
                 <Image
-                  src="/assets/images/chris.webp"
+                  src={chrisHeadshot}
                   alt="Chris Choi"
                   width={145}
                   height={175}

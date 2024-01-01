@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Layout from "@/components/layout/layout.component";
-import type { ReactElement } from "react";
-import type { NextPageWithLayout } from "./_app";
-import React from "react";
+import Link from 'next/link'
+import Layout from '@/components/layout/layout.component'
+import type { ReactElement } from 'react'
+import type { NextPageWithLayout } from './_app'
+import React from 'react'
 
 const Custom404: NextPageWithLayout = () => {
   return (

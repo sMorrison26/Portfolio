@@ -1,9 +1,9 @@
-import { useState, useEffect, use } from "react";
-import Project from "../components/project/project.component";
-import type { ReactElement, ServerContextJSONArray } from "react";
-import type { NextPageWithLayout } from "./_app";
-import Layout from "@/components/layout/layout.component";
-import { preProcessFile } from "typescript";
+import { useState, useEffect, use } from 'react'
+import Project from '../components/project/project.component'
+import type { ReactElement, ServerContextJSONArray } from 'react'
+import type { NextPageWithLayout } from './_app'
+import Layout from '@/components/layout/layout.component'
+import { preProcessFile } from 'typescript'
 
 const Projects: NextPageWithLayout = () => {
 

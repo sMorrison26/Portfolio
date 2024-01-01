@@ -1,6 +1,6 @@
-import Layout from "@/components/layout/layout.component";
-import type { ReactElement } from "react";
-import type { NextPageWithLayout } from "./_app";
+import Layout from '@/components/layout/layout.component'
+import type { ReactElement } from 'react'
+import type { NextPageWithLayout } from './_app'
 
 const Construction: NextPageWithLayout = () => {
   return (
