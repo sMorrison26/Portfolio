@@ -28,19 +28,7 @@
   src: url("/fonts/Virtual-Regulat.otf") format("opentype");
 }
 
-/* .box {
-  background-image: linear-gradient(to top, transparent, rgb(33, 103, 208)), linear-gradient(75.8deg, rgb(0, 208, 255), rgb(84, 84, 239), rgb(164, 127, 226));
-  width: 80%;
-  height: 75%;
-  border: 3px solid black;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 5px rgb(256,256,256,0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-size: 100% 100%, 2000% 100%;
-  animation: gradient 5s infinite;
-} */
+
 .box img {
   scale: 1.5;
 }
@@ -62,10 +50,7 @@
       right center;
   }
 }
-/* .deg_icon {
-  display: flex;
-  justify-content: space-evenly;
-} */
+
 .wind_precip {
   padding: 20px;
   display: grid;

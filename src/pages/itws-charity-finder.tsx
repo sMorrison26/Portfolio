@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import styles from '../styles/CharityFinder.module.css'
 import $ from 'jquery'
 
