@@ -35,7 +35,6 @@ const Projects: NextPageWithLayout = () => {
     <div className="flex-1 flex flex-col items-center mb-10">
       <p className="text-3xl sm:text-4xl md:text-5xl bg-gradient-to-tr from-white to-theme-1 bg-clip-text text-transparent font-bold py-4">Projects</p>
       <div id="projects" className="sm:w-3/4 md:w-4/5 p-4 mx-auto">
-      
         {projectsList.map((item) => (
           <div key={item.title} className="flex flex-col mt-6">
             {/* <div className="w-full py-2"> */}

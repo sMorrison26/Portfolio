@@ -17,7 +17,6 @@ const Home: NextPageWithLayout = () => {
         <p className="text-justify">Passionate. Experienced. Driven.</p>
         <p>Web Development. Cybersecurity.</p>
       </div>
-      {/* <FontAwesomeIcon icon={faAngleDown} style={{ color: "#ffffff", height: '64px' }} className="animate-bounce hover:animate-none hover:cursor-pointer w-fit self-center mt-24" /> */}
     </div>
   );
 };
