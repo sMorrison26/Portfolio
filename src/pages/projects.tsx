@@ -1,17 +1,14 @@
-import { useState, useEffect, use } from 'react'
+import { useState, useEffect } from 'react'
 import Project from '../components/project/project.component'
 import type { ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
 import Layout from '@/components/layout/layout.component'
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
 
 const Projects: NextPageWithLayout = () => {
 
   //project data
   const [projectsList, setProjectsList] = useState([]);
   
-  // const [projectGroup, setProjectGroup] = useState(0);
-
   //get project data
   useEffect(() => {
     async function fetchData() {
@@ -28,7 +25,6 @@ const Projects: NextPageWithLayout = () => {
     fetchData();
   }, []);
   
-  const {isOpen, onOpen, onOpenChange} = useDisclosure()
 
   return (
     <div className="flex-1 flex flex-col items-center mb-10">
@@ -52,10 +48,3 @@ Projects.getLayout = function getLayout(page: ReactElement) {
   return <Layout title="Projects">{page}</Layout>;
 };
 export default Projects;
-
-
-
-
-// I have to make each image a square
-
-//flip card 
