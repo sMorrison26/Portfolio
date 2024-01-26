@@ -7,6 +7,12 @@
         "description": "Fully self-taught, hand crafted web app to showcase my achievements",
         "link": "https://seanm.tech",
         "imagesrc": "/assets/images/seanm.webp" 
+      },
+      {
+        "name": "Password Analyzer",
+        "description": "Hack RPI November 2023",
+        "link": "https://github.com/sMorrison26/hackrpi2023",
+        "imagesrc": "/assets/images/passwordAnalyzer.webp"
       }
     ]
   },
@@ -49,5 +55,16 @@
         "imagesrc": "/assets/images/filmFinder.webp"
       }
     ]
-  }   
+  },
+  {
+    "title": "Web Science Systems Development - Rensselaer Polytechnic Institute",
+    "projects": [
+      {
+        "name": "News App",
+        "description": "A news app that slowly ticks through top articles",
+        "link": "https://github.com/sMorrison26",
+        "imagesrc": "/assets/images/newsapi.webp"
+      }
+    ]  
+  }
 ]

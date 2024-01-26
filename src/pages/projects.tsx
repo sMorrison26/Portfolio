@@ -5,6 +5,8 @@ import type { ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
 import Layout from '@/components/layout/layout.component'
 // import { preProcessFile } from 'typescript'
+import {Button} from '@nextui-org/react'
+import { Modal } from '@nextui-org/react'
 
 const Projects: NextPageWithLayout = () => {
 
