@@ -8,6 +8,7 @@ import "flowbite";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+import {NextUIProvider} from '@nextui-org/react'
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -22,5 +23,9 @@ type AppPropsWithLayout = AppProps & {
 export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
 
-  return getLayout(<Component {...pageProps} />);
+  return getLayout(
+    <NextUIProvider>
+          <Component {...pageProps} />
+    </NextUIProvider>
+  );
 }

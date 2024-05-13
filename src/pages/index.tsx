@@ -15,7 +15,6 @@ const Home: NextPageWithLayout = () => {
       </div>
       <div className="italic self-center mt-24">
         <p className="text-justify">Passionate. Experienced. Driven.</p>
-        <p>Web Development. Cybersecurity.</p>
       </div>
     </div>
   );
