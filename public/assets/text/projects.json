@@ -4,16 +4,28 @@
     "projects": [
       {
         "name": "This Website!",
-        "description": "Fully self-taught, hand crafted web app to showcase my achievements",
+        "description": "Embarked on a solo project to design and construct a personal portfolio website showcasing my diverse range of projects and accomplishments. Leveraged Next.js and TailwindCSS to ensure a seamless and visually appealing user experience. Implemented robust search engine optimization (SEO) strategies and integrated cybersecurity best practices throughout the development process to enhance the website's visibility and security.",
+        "github": "https://github.com/sMorrison26/Portfolio",
         "link": "https://seanm.tech",
-        "imagesrc": "/assets/images/seanm.webp" 
+        "imagesrc": "/assets/images/seanm.webp",
+        "date": "August 2023 - Present"
       },
       {
         "name": "Password Analyzer",
-        "description": "Hack RPI November 2023",
+        "description": "At Hack RPI, participated in a team of three to address real-world challenges through innovative problem-solving. Utilized a technological stack comprising Node.js, TailwindCSS, and jQuery to develop a password analyzer aimed at enhancing public understanding of cybersecurity and promoting effective password security practices. Played a pivotal role in the creation of a search engine leveraging rainbow tables for in-depth password complexity analysis. Through this project, demonstrated strong collaboration, technical proficiency, and a commitment to advancing cybersecurity education and awareness.",
+        "github": "https://github.com/sMorrison26/",
+        "link": "https://github.com/sMorrison26/",
+        "imagesrc": "/assets/images/passwordAnalyzer.webp",
+        "date": "November 2023 - November 2023"
+      },
+      {
+        "name": "Weather App",
+        "description": "Explored new technologies whilst developing an application to provide weather data in a fashionable manner with user location data as parameters.",
+        "github": "https://github.com/sMorrison26/hackrpi2023",
         "link": "https://github.com/sMorrison26/hackrpi2023",
-        "imagesrc": "/assets/images/passwordAnalyzer.webp"
-      }
+        "imagesrc": "/assets/images/weatherapp.webp",
+        "date": "May 2023 - June 2023"
+      }    
     ]
   },
   {
@@ -21,15 +33,19 @@
     "projects": [
       {
         "name": "Personal Website",
-        "description": "A personal website that lists projects and labs completed in this class",
+        "description": "A web app customized to our own image listing labs completed in class and detailing our class work.",
+        "github": "https://github.com/sMorrison26/itws1100",
         "link": "https://morris10rpi.eastus.cloudapp.azure.com",
-        "imagesrc": "/assets/images/itws-personal-snap.webp"
+        "imagesrc": "/assets/images/itws-personal-snap.webp",
+        "date": "September 2022 - December 2022"
       },
       {
         "name": "Charity Finder",
-        "description": "Final Project - A solution to helping young donors find charities that they care about",
+        "description": "A guide helping beginners to navigate their way into the world of charitable donations. Allows users to explore top rated charities ranked by Forbes. Users will find their match -- donating to the organization they truly care about.",
+        "github": "https://github.com/sMorrison26/introTeam4",
         "link": "/itws-charity-finder",
-        "imagesrc": "/assets/images/itws-charity-finder.webp"
+        "imagesrc": "/assets/images/itws-charity-finder.webp",
+        "date": "September 2022 - December 2022"
       }
     ]
   },
@@ -38,21 +54,27 @@
     "projects": [
       {
         "name": "Team Website",
-        "description": "Website that showcases our resumes and other labs completed in class",
-        "link": "https://team4-itws2110.eastus.cloudapp.azure.com",
-        "imagesrc": "/assets/images/itws2110.webp"
+        "description": "Web app that showcases each team member and their related skills. Each team member page is independently developed to act as their own resume. Additionally, the team website links to other projects completed as a team throughout the semester.",
+        "github": "https://github.com/sMorrison26/swmg",
+        "link": "https://github.com/sMorrison26/swmg",
+        "imagesrc": "/assets/images/itws2110.webp",
+        "date": "September 2023 - December 2023"
       },
       {
         "name": "Constitution App",
-        "description": "A web app that showcases the first 10 amendments and 7 articles of the constitution",
-        "link": "https://team4-itws2110.eastus.cloudapp.azure.com/constitution/constitution.html",
-        "imagesrc": "/assets/images/constitution.webp"
+        "description": "In tandem with the American federal observance - Constitution Day - this app provides the verbatim texts of Articles 1 - 7 and Amendments 1 - 10 as well as our analysis for each section respectively. The app additionally includes a section dedicated to the history of the American Constitution.",
+        "github": "https://github.com/RPI-ITWS/swmg",
+        "link": "https://github.com/sMorrison26/swmg",
+        "imagesrc": "/assets/images/constitution.webp",
+        "date": "September 2023 - October 2023"
       },
       {
         "name": "Film Finder",
-        "description": "An app that helps you find the streaming service streaming that movie or show",
-        "link": "https://team4-itws2110.eastus.cloudapp.azure.com/filmFinder",
-        "imagesrc": "/assets/images/filmFinder.webp"
+        "description": "Ever wonder on what streaming service you'd like to watch your movie or show? Well, consider your problems solved with Film Finder. Not only does Film Finder direct you to the platform streaming your desired film, but it also personalizes your search by creating a digital portfolio of your favorites and precisely calculating a match score representative of how much we think you will like the film.",
+        "github": "https://github.com/sMorrison26/swmg",
+        "link": "https://github.com/sMorrison26/swmg",
+        "imagesrc": "/assets/images/filmFinder.webp",
+        "date": "September 2023 - December 2023"
       }
     ]
   },
@@ -61,9 +83,19 @@
     "projects": [
       {
         "name": "News App",
-        "description": "A news app that slowly ticks through top articles",
-        "link": "https://github.com/sMorrison26",
-        "imagesrc": "/assets/images/newsapi.webp"
+        "description": "This news app compiles over two thousand news articles to be displayed in a fashionable ticker. ",
+        "github": "https://github.com/RPI-ITWS/itws4500-morris10",
+        "link": "https://github.com/RPI-ITWS/itws4500-morris10",
+        "imagesrc": "/assets/images/newsapi.webp",
+        "date": "January 2024 - May 2024"
+      },
+      {
+        "name": "Budget Buddy",
+        "description": "A modern solution to most expense tracking problems. Budget buddy aims to assist small organizations and individuals in finance bookkeeping. No more excel, Budget Buddy provides an easy to understand UI with key features geared to enhancing the user experience. Budget Buddy encourages great financial habits such as goal setting and budget creation.",
+        "github": "https://github.com/RPI-ITWS/AbsolutelyNot",
+        "link": "https://github.com/RPI-ITWS/AbsolutelyNot",
+        "imagesrc": "/assets/images/budgetbuddy.webp",
+        "date": "January 2024 - May 2024"
       }
     ]  
   }

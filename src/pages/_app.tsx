@@ -10,7 +10,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 import {NextUIProvider} from '@nextui-org/react'
 
-
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
