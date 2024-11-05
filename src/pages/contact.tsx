@@ -7,9 +7,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 const Contact: NextPageWithLayout = () => {
-  return(
+  return (
     <div className="max-w-screen-xl flex flex-col p-4 h-full mx-auto w-full mt-32">
-      <div className="text-2xl sm:text-3xl md:text-4xl mx-auto mb-4 text-center sm:text-left">
+      <div className="text-2xl sm:text-3xl md:text-4xl mx-auto mb-4 text-center sm:text-left font-light">
         <p>Let&apos;s make something great together!</p>
       </div>
       <div className="md:text-xl sm:w-3/4 md:w-4/5 lg:w-1/2 border border-purple-600 sm:mx-auto">
@@ -23,8 +23,14 @@ const Contact: NextPageWithLayout = () => {
         </div>
         <hr className='w-4/5 mx-auto'></hr>
         <div className='flex flex-col md:flex-row md:justify-between overflow-hidden w-4/5 mx-auto my-4'>
-          <p><strong>Email: </strong><a className='hover:underline text-white/50' href='mailto:morrisonsean123@gmail.com'><br />morrisonsean123@gmail.com</a></p>
-          <p><strong>Mobile: </strong><a className='hover:underline text-white/50' href='tel:4843190679'><br />(484) 319-0679</a></p>
+          <p className='text-white/80'>
+            <strong>Email: </strong>
+            <a className='hover:underline text-white/50 font-light' href='mailto:morrisonsean123@gmail.com'><br />morrisonsean123@gmail.com</a>
+          </p>
+          <p className='text-white/80'>
+            <strong>Mobile: </strong>
+            <a className='hover:underline text-white/50 font-light' href='tel:4843190679'><br />(484) 319-0679</a>
+          </p>
         </div>
       </div>
     </div>

@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react'
-import Project from '../components/project/project.component'
 import type { ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
 import Layout from '@/components/layout/layout.component'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import ProjectSection from '@/components/project/projectSection.component'
 
 export interface ProjectSectionType {
@@ -26,8 +23,6 @@ const Projects: NextPageWithLayout = () => {
   //project data
   const [projectsList, setProjectsList] = useState([]);
   
-
-
   //get project data
   useEffect(() => {
     async function fetchData() {
@@ -52,7 +47,7 @@ const Projects: NextPageWithLayout = () => {
       {/* Individual Project Section */}
       <div id="projects" className="sm:w-3/4 md:w-4/5 mx-auto p-4 ">
         {projectsList.map((item: ProjectSectionType) => (
-          <ProjectSection projects={item.projects} title={item.title} />
+          <ProjectSection {...item} />
         ))}
       </div>
     </div>

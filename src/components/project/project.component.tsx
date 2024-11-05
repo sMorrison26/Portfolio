@@ -2,8 +2,9 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import { projectType } from "@/pages/projects";
 
-export default function Project({ props }) {
+export default function Project(props: projectType) {
   //props takes a title, an image, a link, a description, image alt too
   const divStyle = {
     backgroundImage: `url(${props.imagesrc})`,
@@ -12,10 +13,13 @@ export default function Project({ props }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
-    <div onClick={onOpen} className="dark hover:cursor-pointer rounded border border-transparent hover:border-white">
-      <div className="flex items-end min-h-40 md:min-h-60 bg-cover bg-center hover:h-full rounded" style={divStyle}>
-        <p className="bg-black bg-opacity-70 p-4 w-full rounded-b-sm">{props.name}</p>
+    <div onClick={onOpen} className="dark hover:cursor-pointer border border-transparent hover:border-white/80">
+      <div className="flex items-end min-h-40 md:min-h-60 bg-cover bg-center" style={divStyle}>
       </div>
+      <div className="text-white w-full px-2 py-1 ">
+          <p className="font-bold text-white/80">{props.name}</p>
+          <p className="italic text-sm text-white/50">{props.date}</p>
+        </div>
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
