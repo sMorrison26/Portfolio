@@ -4,7 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { projectType } from "@/pages/projects";
 
-export default function Project(props: projectType) {
+export default function   Project(props: projectType) {
   //props takes a title, an image, a link, a description, image alt too
   const divStyle = {
     backgroundImage: `url(${props.imagesrc})`,
@@ -16,9 +16,9 @@ export default function Project(props: projectType) {
     <div onClick={onOpen} className="dark hover:cursor-pointer border-b border-transparent hover:border-b-white/50">
       <div className="flex items-end min-h-40 md:min-h-60 bg-cover bg-center" style={divStyle}>
       </div>
-      <div className="text-white w-full px-2 py-1 ">
-          <p className="font-bold text-white/80">{props.name}</p>
-          <p className="italic text-sm text-white/50">{props.date}</p>
+      <div className="text-white w-full py-2">
+          <p className="text-sm md:text-medium font-bold text-white/80">{props.name}</p>
+          <p className="text-xs md:text-sm italic text-white/50">{props.date}</p>
         </div>
       <Modal
         isOpen={isOpen}

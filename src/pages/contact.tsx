@@ -8,11 +8,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Contact: NextPageWithLayout = () => {
   return (
-    <div className="max-w-screen-xl flex flex-col p-4 h-full mx-auto w-full mt-32">
-      <div className="text-2xl sm:text-3xl md:text-4xl mx-auto mb-4 text-center sm:text-left font-light">
+    <div className="max-w-screen-xl flex flex-col p-4 h-full mx-auto w-full mt-16 md:mt-32">
+      <div className="text-lg sm:text-2xl md:text-4xl mx-auto mb-4 text-center sm:text-left font-light">
         <p>Let&apos;s make something great together!</p>
       </div>
-      <div className="md:text-xl sm:w-3/4 md:w-4/5 lg:w-1/2 border border-purple-600 sm:mx-auto">
+      <div className="md:text-xl sm:w-3/4 md:w-4/5 lg:w-1/2 border border-purple-500/50 sm:mx-auto">
         <div className="flex justify-between w-1/2 mx-auto p-4 text-xl sm:text-2xl md:text-3xl ">
           <a className='hover:text-purple-400' href='https://www.linkedin.com/in/sean-morrison-2a7201217/' aria-label='See my LinkedIn profile'>
             <FontAwesomeIcon icon={faLinkedin} />
@@ -21,13 +21,13 @@ const Contact: NextPageWithLayout = () => {
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
-        <hr className='w-4/5 mx-auto'></hr>
+        <hr className='w-4/5 mx-auto border-white/50'></hr>
         <div className='flex flex-col md:flex-row md:justify-between overflow-hidden w-4/5 mx-auto my-4'>
-          <p className='text-white/80'>
+          <p className='text-sm md:text-medium text-white/80 mb-4 md:mb-0'>
             <strong>Email: </strong>
             <a className='hover:underline text-white/50 font-light' href='mailto:morrisonsean123@gmail.com'><br />morrisonsean123@gmail.com</a>
           </p>
-          <p className='text-white/80'>
+          <p className='text-sm md:text-medium text-white/80'>
             <strong>Mobile: </strong>
             <a className='hover:underline text-white/50 font-light' href='tel:4843190679'><br />(484) 319-0679</a>
           </p>
