@@ -16,8 +16,8 @@ export default function Header({ title = "Portfolio" }: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav id="header" className="text-white font-extralight font-virtual text-4xl">
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+      <nav id="header" className="absolute top-0 left-0 w-full text-white font-extralight font-virtual text-lg md:text-4xl">
+        <div className="sm:w-3/4 md:w-4/5 flex items-center justify-between mx-4 sm:mx-auto px-4 py-2 md:py-8 border-b border-b-purple-400/40">
           <div className="w-1/4">
             <Link href="https://seanm.tech/" className="hover:underline hover:shadow-lg hover:shadow-theme-1">
               <p className="sm:hidden">Sean</p>
@@ -26,8 +26,7 @@ export default function Header({ title = "Portfolio" }: Props) {
 
           </div>
           <div className="flex w-1/2 justify-center">
-            <Link href={"./about"} className="m-4 hover:underline hover:shadow-lg hover:shadow-theme-1">About</Link>
-            <Link href={"./projects"} className="m-4 hover:underline hover:shadow-lg hover:shadow-theme-1">Projects</Link>
+            <Link href={"./projects"} className="hover:underline hover:shadow-lg hover:shadow-theme-1">Projects</Link>
           </div>
           <div className="flex w-1/4 justify-end">
             <Link href={'./contact'} className="hover:underline hover:shadow-lg hover:shadow-theme-1 bg-transparent">Contact </Link>

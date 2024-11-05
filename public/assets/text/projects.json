@@ -1,6 +1,6 @@
 [
   {
-    "title": "Sean's Projects",
+    "title": "Solo Projects",
     "projects": [
       {
         "name": "This Website!",
@@ -11,46 +11,59 @@
         "date": "August 2023 - Present"
       },
       {
-        "name": "Password Analyzer",
-        "description": "At Hack RPI, participated in a team of three to address real-world challenges through innovative problem-solving. Utilized a technological stack comprising Node.js, TailwindCSS, and jQuery to develop a password analyzer aimed at enhancing public understanding of cybersecurity and promoting effective password security practices. Played a pivotal role in the creation of a search engine leveraging rainbow tables for in-depth password complexity analysis. Through this project, demonstrated strong collaboration, technical proficiency, and a commitment to advancing cybersecurity education and awareness.",
-        "github": "https://github.com/sMorrison26/",
-        "link": "https://github.com/sMorrison26/",
-        "imagesrc": "/assets/images/passwordAnalyzer.webp",
-        "date": "November 2023 - November 2023"
-      },
-      {
         "name": "Weather App",
         "description": "Explored new technologies whilst developing an application to provide weather data in a fashionable manner with user location data as parameters.",
         "github": "https://github.com/sMorrison26/hackrpi2023",
         "link": "https://github.com/sMorrison26/hackrpi2023",
         "imagesrc": "/assets/images/weatherapp.webp",
         "date": "May 2023 - June 2023"
-      }    
-    ]
-  },
-  {
-    "title": "Intro to IT & Web Science - Rensselaer Polytechnic Institute",
-    "projects": [
-      {
-        "name": "Personal Website",
-        "description": "A web app customized to our own image listing labs completed in class and detailing our class work.",
-        "github": "https://github.com/sMorrison26/itws1100",
-        "link": "https://morris10rpi.eastus.cloudapp.azure.com",
-        "imagesrc": "/assets/images/itws-personal-snap.webp",
-        "date": "September 2022 - December 2022"
-      },
-      {
-        "name": "Charity Finder",
-        "description": "A guide helping beginners to navigate their way into the world of charitable donations. Allows users to explore top rated charities ranked by Forbes. Users will find their match -- donating to the organization they truly care about.",
-        "github": "https://github.com/sMorrison26/introTeam4",
-        "link": "/itws-charity-finder",
-        "imagesrc": "/assets/images/itws-charity-finder.webp",
-        "date": "September 2022 - December 2022"
       }
     ]
   },
   {
-    "title": "Web Systems Development - Rensselaer Polytechnic Institute",
+    "title": "Hackathons",
+    "projects": [
+      {
+        "name": "Finance Friends - Trip to Troy",
+        "description": "Trip to Troy is game designed to help students learn about the value of budgeting and the difficulties of making everday financial decisions. The game also seeks to expose users to the local economy of Troy, and promote small minority-owned businesses.",
+        "github": "https://github.com/sMorrison26/FinanceFriends",
+        "link": "https://smorrison26.github.io/FinanceFriends/index.html",
+        "imagesrc": "/assets/images/triptotroy.webp",
+        "date": "February 2024 - February 2024"
+      },
+      {
+        "name": "Password Analyzer",
+        "description": "At Hack RPI, participated in a team of three to address real-world challenges through innovative problem-solving. Utilized a technological stack comprising Node.js, TailwindCSS, and jQuery to develop a password analyzer aimed at enhancing public understanding of cybersecurity and promoting effective password security practices. Played a pivotal role in the creation of a search engine leveraging rainbow tables for in-depth password complexity analysis. Through this project, demonstrated strong collaboration, technical proficiency, and a commitment to advancing cybersecurity education and awareness.",
+        "github": "https://github.com/sMorrison26/",
+        "link": "https://github.com/sMorrison26/",
+        "imagesrc": "/assets/images/passwordAnalyzer.webp",
+        "date": "November 2023 - November 2023"
+      }
+    ]
+  },
+  {
+    "title": "Web Science Systems Development - Spring 2024 - RPI",
+    "projects": [
+      {
+        "name": "News App",
+        "description": "This news app compiles over two thousand news articles to be displayed in a fashionable ticker. ",
+        "github": "https://github.com/RPI-ITWS/itws4500-morris10",
+        "link": "https://github.com/RPI-ITWS/itws4500-morris10",
+        "imagesrc": "/assets/images/newsapi.webp",
+        "date": "January 2024 - May 2024"
+      },
+      {
+        "name": "Budget Buddy",
+        "description": "A modern solution to most expense tracking problems. Budget buddy aims to assist small organizations and individuals in finance bookkeeping. No more excel, Budget Buddy provides an easy to understand UI with key features geared to enhancing the user experience. Budget Buddy encourages great financial habits such as goal setting and budget creation.",
+        "github": "https://github.com/RPI-ITWS/AbsolutelyNot",
+        "link": "https://github.com/RPI-ITWS/AbsolutelyNot",
+        "imagesrc": "/assets/images/budgetbuddy.webp",
+        "date": "January 2024 - May 2024"
+      }
+    ]
+  },
+  {
+    "title": "Web Systems Development - Fall 2023 - RPI",
     "projects": [
       {
         "name": "Team Website",
@@ -79,24 +92,24 @@
     ]
   },
   {
-    "title": "Web Science Systems Development - Rensselaer Polytechnic Institute",
+    "title": "Intro to IT & Web Science - Fall 2022 - RPI",
     "projects": [
       {
-        "name": "News App",
-        "description": "This news app compiles over two thousand news articles to be displayed in a fashionable ticker. ",
-        "github": "https://github.com/RPI-ITWS/itws4500-morris10",
-        "link": "https://github.com/RPI-ITWS/itws4500-morris10",
-        "imagesrc": "/assets/images/newsapi.webp",
-        "date": "January 2024 - May 2024"
+        "name": "Personal Website",
+        "description": "A web app customized to our own image listing labs completed in class and detailing our class work.",
+        "github": "https://github.com/sMorrison26/itws1100",
+        "link": "https://morris10rpi.eastus.cloudapp.azure.com",
+        "imagesrc": "/assets/images/itws-personal-snap.webp",
+        "date": "September 2022 - December 2022"
       },
       {
-        "name": "Budget Buddy",
-        "description": "A modern solution to most expense tracking problems. Budget buddy aims to assist small organizations and individuals in finance bookkeeping. No more excel, Budget Buddy provides an easy to understand UI with key features geared to enhancing the user experience. Budget Buddy encourages great financial habits such as goal setting and budget creation.",
-        "github": "https://github.com/RPI-ITWS/AbsolutelyNot",
-        "link": "https://github.com/RPI-ITWS/AbsolutelyNot",
-        "imagesrc": "/assets/images/budgetbuddy.webp",
-        "date": "January 2024 - May 2024"
+        "name": "Charity Finder",
+        "description": "A guide helping beginners to navigate their way into the world of charitable donations. Allows users to explore top rated charities ranked by Forbes. Users will find their match -- donating to the organization they truly care about.",
+        "github": "https://github.com/sMorrison26/introTeam4",
+        "link": "/itws-charity-finder",
+        "imagesrc": "/assets/images/itws-charity-finder.webp",
+        "date": "September 2022 - December 2022"
       }
-    ]  
+    ]
   }
 ]
