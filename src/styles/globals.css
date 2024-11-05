@@ -23,9 +23,16 @@
   }
 }
 
-@font-face {
-  font-family: Virtual;
-  src: url("/fonts/Virtual-Regulat.otf") format("opentype");
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  *::-webkit-scrollbar {
+      display: none !important;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+      -ms-overflow-style: none !important;  /* IE and Edge */
+      scrollbar-width: none !important;  /* Firefox */
+  }
 }
 
 
@@ -78,14 +85,3 @@
 }
 
 
-@layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-      display: none !important;
-  }
- /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-      -ms-overflow-style: none !important;  /* IE and Edge */
-      scrollbar-width: none !important;  /* Firefox */
-  }
-}
