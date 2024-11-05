@@ -8,7 +8,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Contact: NextPageWithLayout = () => {
   return(
-    <div className="max-w-screen-xl flex flex-col p-4 h-full mx-auto w-full">
+    <div className="max-w-screen-xl flex flex-col p-4 h-full mx-auto w-full mt-32">
       <div className="text-2xl sm:text-3xl md:text-4xl mx-auto mb-4 text-center sm:text-left">
         <p>Let&apos;s make something great together!</p>
       </div>
@@ -23,8 +23,8 @@ const Contact: NextPageWithLayout = () => {
         </div>
         <hr className='w-4/5 mx-auto'></hr>
         <div className='flex flex-col md:flex-row md:justify-between overflow-hidden w-4/5 mx-auto my-4'>
-          <p><strong>Email: </strong><a className='hover:underline' href='mailto:morrisonsean123@gmail.com'><br />morrisonsean123@gmail.com</a></p>
-          <p><strong>Mobile: </strong><a className='hover:underline' href='tel:4843190679'><br />(484) 319-0679</a></p>
+          <p><strong>Email: </strong><a className='hover:underline text-white/50' href='mailto:morrisonsean123@gmail.com'><br />morrisonsean123@gmail.com</a></p>
+          <p><strong>Mobile: </strong><a className='hover:underline text-white/50' href='tel:4843190679'><br />(484) 319-0679</a></p>
         </div>
       </div>
     </div>

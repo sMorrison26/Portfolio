@@ -8,7 +8,7 @@ import "flowbite";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
-import {NextUIProvider} from '@nextui-org/react'
+import { NextUIProvider } from '@nextui-org/react'
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 

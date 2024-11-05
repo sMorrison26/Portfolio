@@ -16,8 +16,8 @@ export default function Header({ title = "Portfolio" }: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav id="header" className="text-white font-extralight font-virtual text-4xl">
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+      <nav id="header" className="absolute top-0 left-0 w-full text-white font-extralight font-virtual text-4xl">
+        <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 border-b border-b-purple-400/40">
           <div className="w-1/4">
             <Link href="https://seanm.tech/" className="hover:underline hover:shadow-lg hover:shadow-theme-1">
               <p className="sm:hidden">Sean</p>
