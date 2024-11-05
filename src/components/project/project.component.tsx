@@ -13,7 +13,7 @@ export default function Project(props: projectType) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
-    <div onClick={onOpen} className="dark hover:cursor-pointer border border-transparent hover:border-white/80">
+    <div onClick={onOpen} className="dark hover:cursor-pointer border-b border-transparent hover:border-b-white/50">
       <div className="flex items-end min-h-40 md:min-h-60 bg-cover bg-center" style={divStyle}>
       </div>
       <div className="text-white w-full px-2 py-1 ">

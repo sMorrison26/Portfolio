@@ -1,5 +1,4 @@
 import Layout from '@/components/layout/layout.component'
-import Image from 'next/image'
 import type { ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
 
@@ -22,7 +21,7 @@ const About: NextPageWithLayout = () => {
       <div id='resume' className=''>
       </div> */}
     </div>
-  
+
   );
 };
 

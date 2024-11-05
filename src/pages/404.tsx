@@ -7,7 +7,7 @@ import React from 'react'
 const Custom404: NextPageWithLayout = () => {
   return (
     <div className=" text-text-white mb-5">
-      <div className="grid grid-rows-2 pt-24 text-center m-4">
+      <div className="grid grid-rows-2 mt-36 text-center m-4">
         <div className="flex justify-self-center mb-6">
           <p className="text-5xl text-purple-500 font-bold">404</p>
         </div>

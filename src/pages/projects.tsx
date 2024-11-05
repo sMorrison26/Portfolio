@@ -6,7 +6,8 @@ import ProjectSection from '@/components/project/projectSection.component'
 
 export interface ProjectSectionType {
   projects: Array<projectType>,
-  title: string
+  title: string,
+  visible: boolean
 }
 
 export interface projectType {
@@ -22,6 +23,8 @@ const Projects: NextPageWithLayout = () => {
 
   //project data
   const [projectsList, setProjectsList] = useState([]);
+
+  const [allVisible, setAllVisible] = useState<boolean>(false);
   
   //get project data
   useEffect(() => {
@@ -42,12 +45,15 @@ const Projects: NextPageWithLayout = () => {
   
 
   return (
-    <div className="flex-1 flex flex-col items-center mb-10 mt-32">
+    <div className="flex-1 flex flex-col items-center  mb-10 mt-32 sm:w-3/4 md:w-4/5 mx-auto scrollbar-hide">
       <p className="text-3xl sm:text-4xl md:text-5xl bg-gradient-to-tr from-white to-theme-1 bg-clip-text text-transparent font-bold py-4">Projects</p>
+      <p className='text-xs text-white/50 ml-auto text-right hover:text-white/80 cursor-pointer' onClick={() => setAllVisible(!allVisible)}>
+        {allVisible ? "Hide all" : "Expand all"}
+      </p>
       {/* Individual Project Section */}
-      <div id="projects" className="sm:w-3/4 md:w-4/5 mx-auto p-4 ">
+      <div id="projects" className="w-full">
         {projectsList.map((item: ProjectSectionType) => (
-          <ProjectSection {...item} />
+          <ProjectSection {...item} visible={allVisible} />
         ))}
       </div>
     </div>
