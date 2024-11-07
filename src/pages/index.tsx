@@ -40,8 +40,14 @@ const Home: NextPageWithLayout = () => {
           </figure>
           <div className='basis-4/5 font-light mt-12 md:mt-36'>
             <p className='text-2xl sm:text-3xl md:text-4xl mb-4'>Meet Sean.</p>
-            <p className='text-white/50'>Experienced web developer with a passion for cybersecurity.</p>
-            <p className='text-white/50'>At the heart of my work is the belief in making a tangible difference. I don&apos;t just strive for change; I live by it. As a student of RPI, I continue to hone my skills and embrace the ethos of innovation and societal impact. Whether it&apos;s building secure web applications or implementing robust cybersecurity measures, I am driven by the goal of creating a safer digital landscape.</p>
+            {/* <p className='text-white/50'>Experienced web developer with a passion for cybersecurity.</p> */}
+            <p className='text-white/50'>
+              Hi! My name is Sean, and I am a junior studying Information Technology & Web Science at RPI, with minors in both Management and Computer Science. I am passionate about everything IT, and over the course of my career, I&apos;ve fallen in love with building robust software—mainly in the form of web applications. My concentration is in the field of information security, giving me strong knowledge of what it takes to develop secure and reliable software. With two internship experiences, I have honed my skills in developing scalable solutions and have contributed to building processes that impact the software development life cycle.
+            </p>
+            <br />
+            <p className='text-white/50'>
+              Apart from my technical skills, I am someone who values strong culture. My involvement in several organizations across RPI&apos;s campus demonstrated my commitment to making a positive impact within the RPI community and my dedication to giving back to each community I join. As a member of the Sigma Chi fraternity, I have helped raise over four thousand dollars for cancer research through a series of volunteer and nonprofit events. Additionally, I have led several workshops aimed at enhancing and promoting group dynamics within other campus organizations, using hands-on exercises and group activities as part of the Leadership Educators Advising Peers (LEAP) program.
+            </p>
           </div>
         </div>
         <div id='certs' className=''>
