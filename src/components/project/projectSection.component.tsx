@@ -18,7 +18,7 @@ export default function ProjectSection(props: ProjectSectionType) {
   return (
     <div className="flex flex-col mt-6 mb-10">
       {/* Title */}
-      <div className={`flex items-center justify-between mb-4 ${visible ? "text-purple-500 hover:text-purple-400" : "text-white/50 hover:text-white/70"} cursor-pointer `} onClick={() => setVisible(!visible)}>
+      <div className={`flex items-center justify-between mb-4 ${visible ? "text-purple-500 hover:text-purple-400" : "text-white/60 hover:text-white/70"} cursor-pointer `} onClick={() => setVisible(!visible)}>
         <p className={`sm:text-xl md:text-2xl font-light`}>{props.title}</p>
         <FontAwesomeIcon icon={visible ? faChevronDown : faChevronUp} className='text-lg md:text-2xl'/>
       </div>

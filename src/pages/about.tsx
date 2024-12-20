@@ -11,8 +11,8 @@ const About: NextPageWithLayout = () => {
         </figure>
         <div className='basis-4/5 font-light'>
           <p className='text-2xl sm:text-3xl md:text-4xl mb-4'>Meet Sean.</p>
-          <p className='text-white/50'>Experienced web developer with a passion for cybersecurity.</p>
-          <p className='text-white/50'>At the heart of my work is the belief in making a tangible difference. I don&apos;t just strive for change; I live by it. As a student of RPI, I continue to hone my skills and embrace the ethos of innovation and societal impact. Whether it&apos;s building secure web applications or implementing robust cybersecurity measures, I am driven by the goal of creating a safer digital landscape.</p>
+          <p className='text-white/60'>Experienced web developer with a passion for cybersecurity.</p>
+          <p className='text-white/60'>At the heart of my work is the belief in making a tangible difference. I don&apos;t just strive for change; I live by it. As a student of RPI, I continue to hone my skills and embrace the ethos of innovation and societal impact. Whether it&apos;s building secure web applications or implementing robust cybersecurity measures, I am driven by the goal of creating a safer digital landscape.</p>
         </div>
       </div>
       <div id='certs' className=''>

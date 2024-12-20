@@ -47,7 +47,7 @@ const Projects: NextPageWithLayout = () => {
   return (
     <div className="flex-1 flex flex-col items-center  mb-10 mt-12 md:mt-32 sm:w-3/4 md:w-4/5 mx-auto p-4">
       <p className="text-3xl sm:text-4xl md:text-5xl bg-gradient-to-tr from-white to-theme-1 bg-clip-text text-transparent font-bold py-4">Projects</p>
-      <p className='text-xs text-white/50 ml-auto text-right hover:text-white/80 cursor-pointer' onClick={() => setAllVisible(!allVisible)}>
+      <p className='text-xs text-white/60 ml-auto text-right hover:text-white/80 cursor-pointer' onClick={() => setAllVisible(!allVisible)}>
         {allVisible ? "Hide all" : "Expand all"}
       </p>
       {/* Individual Project Section */}

@@ -69,6 +69,7 @@
 .sort:hover {
   background-color: rgb(104, 185, 185);
 }
+
 .sort:active {
   background-color: rgb(85, 151, 151);
   transform: translateY(2px);
