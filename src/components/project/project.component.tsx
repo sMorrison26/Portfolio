@@ -18,7 +18,7 @@ export default function   Project(props: projectType) {
       </div>
       <div className="text-white w-full py-2">
           <p className="text-sm md:text-medium font-bold text-white/80">{props.name}</p>
-          <p className="text-xs md:text-sm italic text-white/50">{props.date}</p>
+          <p className="text-xs md:text-sm italic text-white/60">{props.date}</p>
         </div>
       <Modal
         isOpen={isOpen}
