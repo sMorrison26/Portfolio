@@ -34,7 +34,15 @@
       scrollbar-width: none !important;  /* Firefox */
   }
 }
+body {
+  min-height: -webkit-fill-available;
+}
 
+/* Safe area bottom */
+.safe-bottom {
+  position: relative;
+  padding-bottom: env(safe-area-inset-bottom);  
+}
 
 .box img {
   scale: 1.5;

@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import onAHill from '@/images/onAHill.webp'
 
+
 const Home: NextPageWithLayout = () => {
 
 
@@ -37,7 +38,7 @@ const Home: NextPageWithLayout = () => {
 
 
       {/* Second section */}
-      <section className="snap-start h-screen w-full flex items-center justify-center overflow-hidden">
+      <section className="snap-start h-screen w-full flex items-center justify-center overflow-hidden safe-bottom">
         <div className="flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 p-4">
           <div id="pitch" className="flex flex-col md:flex-row h-full">
             {/* Image Section */}
@@ -63,7 +64,7 @@ const Home: NextPageWithLayout = () => {
             </div>
           </div>
           {/* Chevron */}
-          <div className="mt-auto flex justify-center items-center md:mt-8 md:mb-4">
+          <div className="flex justify-center items-center md:mt-8 md:mb-4 safe-bottom relative">
             <FontAwesomeIcon icon={faChevronDown} className="text-2xl md:text-4xl animate-bounce" />
           </div>
         </div>

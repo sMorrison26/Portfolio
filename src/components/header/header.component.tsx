@@ -13,7 +13,8 @@ export default function Header({ title = "Portfolio" }: Props) {
         <title>{titleValue}</title>
         <meta property="og:title" content="Sean Morrison" key="title" />
         <meta name="description" content="Portfolio | Sean Morrison" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav id="header" className="absolute top-0 left-0 w-full text-white font-extralight font-virtual text-lg md:text-4xl">
