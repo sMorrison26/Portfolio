@@ -38,7 +38,7 @@ const Home: NextPageWithLayout = () => {
 
 
       {/* Second section */}
-      <section className="snap-start h-screen w-full flex items-center justify-center overflow-hidden safe-bottom">
+      <section className="snap-start h-screen w-full flex items-center justify-center overflow-hidden">
         <div className="flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 p-4">
           <div id="pitch" className="flex flex-col md:flex-row h-full">
             {/* Image Section */}

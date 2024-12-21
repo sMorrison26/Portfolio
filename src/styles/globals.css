@@ -23,6 +23,10 @@
   }
 }
 
+:root {
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+}
+
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   *::-webkit-scrollbar {
@@ -34,14 +38,17 @@
       scrollbar-width: none !important;  /* Firefox */
   }
 }
-body {
+.test {
   min-height: -webkit-fill-available;
+}
+nav#header {
+  height: 10vh; /* Adjust the value as needed */
 }
 
 /* Safe area bottom */
 .safe-bottom {
   position: relative;
-  padding-bottom: env(safe-area-inset-bottom);  
+  padding-bottom: -webkit-fill-available;
 }
 
 .box img {
