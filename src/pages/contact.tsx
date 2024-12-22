@@ -14,9 +14,9 @@ const Contact: NextPageWithLayout = () => {
         <p>Let&apos;s make something great together!</p>
       </div>
       <div className="md:text-xl sm:w-3/4 md:w-4/5 lg:w-1/2 border-x border-white/30 sm:mx-auto">
-        <div className="flex justify-between items-center gap-4 w-4/5 mx-auto py-4 text-xl sm:text-2xl md:text-3xl ">
+        <div className="flex justify-between items-center gap-4 w-4/5 mx-auto py-4 text-xl sm:text-2xl md:text-3xl text-white/70">
           <a className='hover:text-purple-400' href='https://www.linkedin.com/in/smorrison26/' aria-label='LinkedIn profile'>
-            <FontAwesomeIcon icon={faLinkedin} className='mr-4' />
+            <FontAwesomeIcon icon={faLinkedin} className='' />
           </a>
           <a className='hover:text-purple-400' href='https://github.com/sMorrison26/' aria-label='GitHub profile'>
             <FontAwesomeIcon icon={faGithub} />
@@ -25,6 +25,7 @@ const Contact: NextPageWithLayout = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
+
       </div>
     </div>
   );
