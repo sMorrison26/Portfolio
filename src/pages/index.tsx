@@ -64,21 +64,21 @@ const Home: NextPageWithLayout = () => {
             </div>
           </div>
           {/* Chevron */}
-          <div className="flex justify-center items-center mt-8 md:mb-4 ">
+          {/* <div className="flex justify-center items-center mt-8 md:mb-4 ">
             <FontAwesomeIcon icon={faChevronDown} className="text-2xl md:text-4xl animate-bounce" />
-          </div>
+          </div> */}
         </div>
       </section>
 
 
 
       {/* Third Section */}
-      <section className='snap-start h-screen w-full flex items-center justify-center'>
+      {/* <section className='snap-start h-screen w-full flex items-center justify-center'>
         <div id='certs' className=''>
         </div>
         <div id='resume' className=''>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
