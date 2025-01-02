@@ -1,19 +1,45 @@
-import Layout from '../components/layout/layout.component'
+import Layout from '@/components/layout/layout.component'
 import Image from 'next/image'
 import headshot from '@/images/headshot_2.webp'
-import type { ReactElement } from 'react'
+import { useState, type ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import onAHill from '@/images/onAHill.webp'
+import CTDI from '@/images/CTDI.webp'
 
 
 const Home: NextPageWithLayout = () => {
 
+  // Current position for experience_data array
+  const [pos, setPos] = useState<number>(0);
+  const experience_data = [
+    {
+      "title": "Development Operations Engineer Intern",
+      "company": "Communications Test Design Inc.",
+      "company_logo": "CTDI",
+      "date": "May 2024 - Aug 2024",
+      "summary": [
+        "Designed C# web application to streamline secret management across multiple cloud platforms including Octopus & AWS.",
+        "Optimized F5 server-side software using C# to precisely diagnose and troubleshoot code deployment issues in production.",
+        "Implemented dynamic key performance indicator script leveraging Python to drive data driven decision-making."
+      ]
+    }, {
+      "title": "Software Engineer Intern",
+      "company": "Communications Test Design Inc.",
+      "company_logo": "CTDI",
+      "date": "May 2023 - Aug 2023",
+      "summary": [
+        "Remodeled the front end of an internal search engine utility to drive engagement rates and standardize use across the company.",
+        "Engineered and debugged backend of internal search engine utility with C# and AngularJS to assist in data migration processes.",
+        "Formulated a sleek new visitor login system to be installed into kiosks at every CTDI location."
+      ]
+    }
+  ]
 
   return (
     <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
-      {/* First section with custom content */}
+      {/* First section - Intro */}
       <section className="snap-start h-screen w-full flex items-center justify-center">
         <div className="flex flex-col p-4 h-full mx-auto sm:w-3/4 md:w-4/5">
           <div className="flex justify-between items-center h-1/2 mt-10 md:mt-24">
@@ -35,10 +61,8 @@ const Home: NextPageWithLayout = () => {
         </div>
       </section>
 
-
-
-      {/* Second section */}
-      <section className="snap-start h-screen w-full flex items-center justify-center overflow-hidden">
+      {/* Second section - Elevator */}
+      <section className="snap-start h-screen w-full flex items-center justify-center">
         <div className="flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4 pb-safe">
           <div id="pitch" className="flex flex-col md:flex-row">
             {/* Image Section */}
@@ -64,21 +88,61 @@ const Home: NextPageWithLayout = () => {
             </div>
           </div>
           {/* Chevron */}
-          {/* <div className="flex justify-center items-center mt-8 md:mb-4 ">
+          <div className="flex justify-center items-center mt-8 md:mb-4 ">
             <FontAwesomeIcon icon={faChevronDown} className="text-2xl md:text-4xl animate-bounce" />
-          </div> */}
+          </div>
         </div>
       </section>
 
-
-
       {/* Third Section */}
-      {/* <section className='snap-start h-screen w-full flex items-center justify-center'>
-        <div id='certs' className=''>
+      <section className='snap-start h-screen w-full flex items-center justify-center'>
+        <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
+          <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-36 mb-4'>Employment Experience</p>
+          <div className='flex w-full h-full mx-auto'>
+            {/* begin listing sections */}
+            <div className='flex flex-col'>
+              <div className='flex border-l-white/30 border-l pl-4 mb-8'>
+                <figure className='basis-1/12 mr-4'>
+                  <Image
+                    src={CTDI}
+                    className="max-h-[10vh] max-w-[10vw] object-cover rounded-md shadow-sm shadow-theme-1"
+                    alt={experience_data[pos].company}
+                  />
+                </figure>
+                {/* Main Details */}
+                <div className='basis-11/12'>
+                  <p className='text-lg md:text-2xl font-semibold'>{experience_data[pos].title}</p>
+                  <p className='md:text-lg my-2 sm:my-3'>{experience_data[pos].company}</p>
+                  <p className='font-light text-white/70'>{experience_data[pos].date}</p>
+                  {/* Summary */}
+                  <div className='text-sm font-light mt-2'>
+                    <ul className="list-disc list-inside list-image-[">
+                      {experience_data[pos].summary.map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {/* Change section */}
+              <div className='flex justify-between items-center w-1/2 mx-auto mt-4'>
+                <FontAwesomeIcon
+                  icon={faChevronLeft}
+                  className={`text-xl md:text-2xl ${pos === 0 ? 'text-transparent' : 'text-white/70 cursor-pointer hover:text-white/90'}`}
+                  aria-disabled={pos === 1}
+                  onClick={() => (pos !== 0 ? setPos(pos-1) : {})}
+                />
+                <p className='text-xs md:text-sm font-light'>{pos + 1} / {experience_data.length}</p>
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className={`text-xl md:text-2xl ${pos === experience_data.length - 1 ? 'text-transparent' : 'text-white/70 cursor-pointer text-white/90'}`}
+                  onClick={() => (pos !== experience_data.length - 1 ? setPos(pos+1) : {})}
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div id='resume' className=''>
-        </div>
-      </section> */}
+      </section>
     </div>
   );
 };
