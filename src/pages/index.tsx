@@ -6,7 +6,6 @@ import type { NextPageWithLayout } from './_app'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import onAHill from '@/images/onAHill.webp'
-import CTDI from '@/images/CTDI.webp'
 
 
 const Home: NextPageWithLayout = () => {
@@ -17,7 +16,7 @@ const Home: NextPageWithLayout = () => {
     {
       "title": "Development Operations Engineer Intern",
       "company": "Communications Test Design Inc.",
-      "company_logo": "CTDI",
+      "company_logo": "/assets/images/CTDI.webp",
       "date": "May 2024 - Aug 2024",
       "summary": [
         "Designed C# web application to streamline secret management across multiple cloud platforms including Octopus & AWS.",
@@ -27,7 +26,7 @@ const Home: NextPageWithLayout = () => {
     }, {
       "title": "Software Engineer Intern",
       "company": "Communications Test Design Inc.",
-      "company_logo": "CTDI",
+      "company_logo": "/assets/images/CTDI.webp",
       "date": "May 2023 - Aug 2023",
       "summary": [
         "Remodeled the front end of an internal search engine utility to drive engagement rates and standardize use across the company.",
@@ -98,13 +97,15 @@ const Home: NextPageWithLayout = () => {
       <section className='snap-start h-screen w-full flex items-center justify-center'>
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
           <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-36 mb-4'>Employment Experience</p>
-          <div className='flex w-full h-full mx-auto'>
+          <div className=''>
             {/* begin listing sections */}
             <div className='flex flex-col'>
               <div className='flex border-l-white/30 border-l pl-4 mb-8'>
                 <figure className='basis-1/12 mr-4'>
                   <Image
-                    src={CTDI}
+                    src={experience_data[pos].company_logo}
+                    width={100}
+                    height={100}
                     className="max-h-[10vh] max-w-[10vw] object-cover rounded-md shadow-sm shadow-theme-1"
                     alt={experience_data[pos].company}
                   />
