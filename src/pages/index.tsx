@@ -24,6 +24,15 @@ const Home: NextPageWithLayout = () => {
         "Implemented dynamic key performance indicator script leveraging Python to drive data driven decision-making."
       ]
     }, {
+      "title": "Website Designer",
+      "company": "Rensselaer Polytechnic Institute",
+      "company_logo": "/assets/images/rpilogo.webp",
+      "date": "Dec 2023 - May 2024",
+      "summary": [
+        "Revamped the RPI Chemistry Department website to attract prospective students and boost enrollment.",
+        "Researched UI statistics in web development to create an excellent and engaging website for RPI.",
+      ]
+    }, {
       "title": "Software Engineer Intern",
       "company": "Communications Test Design Inc.",
       "company_logo": "/assets/images/CTDI.webp",
@@ -32,6 +41,34 @@ const Home: NextPageWithLayout = () => {
         "Remodeled the front end of an internal search engine utility to drive engagement rates and standardize use across the company.",
         "Engineered and debugged backend of internal search engine utility with C# and AngularJS to assist in data migration processes.",
         "Formulated a sleek new visitor login system to be installed into kiosks at every CTDI location."
+      ]
+    }, {
+      "title": "Team Leader",
+      "company": "Chick-Fil-A",
+      "company_logo": "/assets/images/chickfila.webp",
+      "date": "Jun 2022 - Aug 2022",
+      "summary": [
+        "Led a team of 15+ members to achieve an average customer satisfaction score of 95%, exceeding company standards.",
+        "Implemented a new training program for new hires, reducing onboarding time by 20% and improving overall team efficiency."
+      ]
+    }, {
+      "title": "Trainer",
+      "company": "Chick-Fil-A",
+      "company_logo": "/assets/images/chickfila.webp",
+      "date": "Jan 2022 - Jun 2022",
+      "summary": [
+        "Mentored new team members, resulting in a 25% faster adaptation period and higher initial performance scores.",
+        "Collaborated with management to identify and address training needs, ensuring alignment with company goals and standards."
+      ]
+    }, {
+      "title": "Team Member",
+      "company": "Chick-Fil-A",
+      "company_logo": "/assets/images/chickfila.webp",
+      "date": "Apr 2021 - Jan 2022",
+      "summary": [
+        "Maintained perfect attendance and punctuality, demonstrating reliability and commitment to team success.",
+        "Contributed to a clean and organized work environment, receiving commendations for adherence to sanitation and safety standards.",
+        "Processed customer orders efficiently, reducing wait times by 10% during peak hours while ensuring order accuracy."
       ]
     }
   ]
@@ -97,26 +134,29 @@ const Home: NextPageWithLayout = () => {
       <section className='snap-start h-screen w-full flex items-center justify-center'>
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
           <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-36 mb-4'>Employment Experience</p>
-          <div className=''>
-            {/* begin listing sections */}
-            <div className='flex flex-col'>
-              <div className='flex border-l-white/30 border-l pl-4 mb-8'>
-                <figure className='basis-1/12 mr-4'>
+          {/* begin listing sections */}
+          <div className='flex flex-col justify-around h-full'>
+            <div className='basis-3/4 md:basis-1/2'>
+              <div className='md:flex border-l-white/30 border-l pl-4'>
+                <figure className='md:basis-1/12 mb-4 md:mr-4'>
                   <Image
                     src={experience_data[pos].company_logo}
                     width={100}
                     height={100}
-                    className="max-h-[10vh] max-w-[10vw] object-cover rounded-md shadow-sm shadow-theme-1"
+                    className="max-h-[20vh] max-w-[20vw] md:max-h-[10vh] md:max-w-[10vw] object-cover rounded-md shadow-sm shadow-theme-1"
                     alt={experience_data[pos].company}
                   />
                 </figure>
                 {/* Main Details */}
                 <div className='basis-11/12'>
-                  <p className='text-lg md:text-2xl font-semibold'>{experience_data[pos].title}</p>
-                  <p className='md:text-lg my-2 sm:my-3'>{experience_data[pos].company}</p>
-                  <p className='font-light text-white/70'>{experience_data[pos].date}</p>
+                  {/* <div className='flex md:flex-col justify-between items-center md:items-start'> */}
+                    <p className='text-lg md:text-2xl font-semibold'>{experience_data[pos].title}</p>
+                    <p className='text-xs md:text-medium font-light text-white/70'>{experience_data[pos].date}</p>
+
+                  {/* </div> */}
+                  <p className='text-sm md:text-lg my-2 sm:my-3'>{experience_data[pos].company}</p>
                   {/* Summary */}
-                  <div className='text-sm font-light mt-2'>
+                  <div className='text-xs md:text-medium font-light mt-2'>
                     <ul className="list-disc list-inside list-image-[">
                       {experience_data[pos].summary.map((point, index) => (
                         <li key={index}>{point}</li>
@@ -125,21 +165,21 @@ const Home: NextPageWithLayout = () => {
                   </div>
                 </div>
               </div>
-              {/* Change section */}
-              <div className='flex justify-between items-center w-1/2 mx-auto mt-4'>
-                <FontAwesomeIcon
-                  icon={faChevronLeft}
-                  className={`text-xl md:text-2xl ${pos === 0 ? 'text-transparent' : 'text-white/70 cursor-pointer hover:text-white/90'}`}
-                  aria-disabled={pos === 1}
-                  onClick={() => (pos !== 0 ? setPos(pos-1) : {})}
-                />
-                <p className='text-xs md:text-sm font-light'>{pos + 1} / {experience_data.length}</p>
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className={`text-xl md:text-2xl ${pos === experience_data.length - 1 ? 'text-transparent' : 'text-white/70 cursor-pointer text-white/90'}`}
-                  onClick={() => (pos !== experience_data.length - 1 ? setPos(pos+1) : {})}
-                />
-              </div>
+            </div>
+            {/* Change section */}
+            <div className='flex basis-1/4 md:basis-1/2 justify-between items-start w-1/2 mx-auto mt-4'>
+              <FontAwesomeIcon
+                icon={faChevronLeft}
+                className={`text-xl md:text-2xl ${pos === 0 ? 'text-transparent' : 'text-white/70 cursor-pointer hover:text-white'}`}
+                aria-disabled={pos === 1}
+                onClick={() => (pos !== 0 ? setPos(pos - 1) : {})}
+              />
+              <p className='text-sm md:text-medium font-light'>{pos + 1} / {experience_data.length}</p>
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className={`text-xl md:text-2xl ${pos === experience_data.length - 1 ? 'text-transparent' : 'text-white/70 cursor-pointer hover:text-white'}`}
+                onClick={() => (pos !== experience_data.length - 1 ? setPos(pos + 1) : {})}
+              />
             </div>
           </div>
         </div>
