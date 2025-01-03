@@ -135,43 +135,43 @@ const Home: NextPageWithLayout = () => {
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
           <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-36 mb-4'>Employment Experience</p>
           {/* begin listing sections */}
-          <div className='flex flex-col justify-around h-full'>
-            <div className='basis-3/4 md:basis-1/2'>
-              <div className='md:flex border-l-white/30 border-l pl-4'>
-                <figure className='md:basis-1/12 mb-4 md:mr-4'>
-                  <Image
-                    src={experience_data[pos].company_logo}
-                    width={100}
-                    height={100}
-                    className="max-h-[20vh] max-w-[20vw] md:max-h-[10vh] md:max-w-[10vw] object-cover rounded-md shadow-sm shadow-theme-1"
-                    alt={experience_data[pos].company}
-                  />
-                </figure>
-                {/* Main Details */}
-                <div className='basis-11/12'>
-                  {/* <div className='flex md:flex-col justify-between items-center md:items-start'> */}
-                    <p className='text-lg md:text-2xl font-semibold'>{experience_data[pos].title}</p>
-                    <p className='text-xs md:text-medium font-light text-white/70'>{experience_data[pos].date}</p>
-
-                  {/* </div> */}
-                  <p className='text-sm md:text-lg my-2 sm:my-3'>{experience_data[pos].company}</p>
-                  {/* Summary */}
-                  <div className='text-xs md:text-medium font-light mt-2'>
-                    <ul className="list-disc list-inside list-image-[">
-                      {experience_data[pos].summary.map((point, index) => (
-                        <li key={index}>{point}</li>
-                      ))}
-                    </ul>
+          <div className='flex flex-col justify-around h-full relative overflow-hidden'>
+            <div className='basis-3/4 md:basis-1/2 transition-transform duration-500' style={{ transform: `translateX(-${pos * 100}%)` }}>
+              {experience_data.map((experience, index) => (
+                <div key={index} className='absolute w-full h-full top-0 left-0 flex transition-transform duration-500' style={{ transform: `translateX(${index * 100}%)` }}>
+                  <div className='md:flex h-fit border-l-white/30 border-l pl-4'>
+                    <figure className='md:basis-1/12 mb-4 md:mr-4'>
+                      <Image
+                        src={experience.company_logo}
+                        width={100}
+                        height={100}
+                        className="max-h-[20vh] max-w-[20vw] md:max-h-[10vh] md:max-w-[10vw] object-cover rounded-md shadow-sm shadow-theme-1"
+                        alt={experience.company}
+                      />
+                    </figure>
+                    {/* Main Details */}
+                    <div className='basis-11/12'>
+                      <p className='text-lg md:text-2xl font-semibold'>{experience.title}</p>
+                      <p className='text-xs md:text-medium font-light text-white/70'>{experience.date}</p>
+                      <p className='text-sm md:text-lg my-2 sm:my-3'>{experience.company}</p>
+                      {/* Summary */}
+                      <div className='text-xs md:text-medium font-light mt-2'>
+                        <ul className="list-disc list-inside">
+                          {experience.summary.map((point, index) => (
+                            <li key={index}>{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
             {/* Change section */}
             <div className='flex basis-1/4 md:basis-1/2 justify-between items-start w-1/2 mx-auto mt-4'>
               <FontAwesomeIcon
                 icon={faChevronLeft}
                 className={`text-xl md:text-2xl ${pos === 0 ? 'text-transparent' : 'text-white/70 cursor-pointer hover:text-white'}`}
-                aria-disabled={pos === 1}
                 onClick={() => (pos !== 0 ? setPos(pos - 1) : {})}
               />
               <p className='text-sm md:text-medium font-light'>{pos + 1} / {experience_data.length}</p>
