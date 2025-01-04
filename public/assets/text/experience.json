@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Development Operations Engineer Intern",
+    "company": "Communications Test Design Inc.",
+    "company_logo": "/assets/images/CTDI.webp",
+    "date": "May 2024 - Aug 2024",
+    "summary": [
+      "Designed C# web application to streamline secret management across multiple cloud platforms including Octopus & AWS.",
+      "Optimized F5 server-side software using C# to precisely diagnose and troubleshoot code deployment issues in production.",
+      "Implemented dynamic key performance indicator script leveraging Python to drive data driven decision-making."
+    ]
+  }, {
+    "title": "Website Designer",
+    "company": "Rensselaer Polytechnic Institute",
+    "company_logo": "/assets/images/rpilogo.webp",
+    "date": "Dec 2023 - May 2024",
+    "summary": [
+      "Revamped the RPI Chemistry Department website to attract prospective students and boost enrollment.",
+      "Researched UI statistics in web development to create an excellent and engaging website for RPI."
+    ]
+  }, {
+    "title": "Software Engineer Intern",
+    "company": "Communications Test Design Inc.",
+    "company_logo": "/assets/images/CTDI.webp",
+    "date": "May 2023 - Aug 2023",
+    "summary": [
+      "Remodeled the front end of an internal search engine utility to drive engagement rates and standardize use across the company.",
+      "Engineered and debugged backend of internal search engine utility with C# and AngularJS to assist in data migration processes.",
+      "Formulated a sleek new visitor login system to be installed into kiosks at every CTDI location."
+    ]
+  }, {
+    "title": "Team Leader",
+    "company": "Chick-Fil-A",
+    "company_logo": "/assets/images/chickfila.webp",
+    "date": "Jun 2022 - Aug 2022",
+    "summary": [
+      "Led a team of 15+ members to achieve an average customer satisfaction score of 95%, exceeding company standards.",
+      "Implemented a new training program for new hires, reducing onboarding time by 20% and improving overall team efficiency."
+    ]
+  }, {
+    "title": "Trainer",
+    "company": "Chick-Fil-A",
+    "company_logo": "/assets/images/chickfila.webp",
+    "date": "Jan 2022 - Jun 2022",
+    "summary": [
+      "Mentored new team members, resulting in a 25% faster adaptation period and higher initial performance scores.",
+      "Collaborated with management to identify and address training needs, ensuring alignment with company goals and standards."
+    ]
+  }, {
+    "title": "Team Member",
+    "company": "Chick-Fil-A",
+    "company_logo": "/assets/images/chickfila.webp",
+    "date": "Apr 2021 - Jan 2022",
+    "summary": [
+      "Maintained perfect attendance and punctuality, demonstrating reliability and commitment to team success.",
+      "Contributed to a clean and organized work environment, receiving commendations for adherence to sanitation and safety standards.",
+      "Processed customer orders efficiently, reducing wait times by 10% during peak hours while ensuring order accuracy."
+    ]
+  }
+]
