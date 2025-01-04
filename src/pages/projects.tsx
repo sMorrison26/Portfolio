@@ -30,9 +30,8 @@ const Projects: NextPageWithLayout = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const encodedPath = btoa("/assets/text/projects.json");
-        const apiUrl = `api/getJson?path=${encodedPath}`;
-        const response = await fetch(apiUrl);
+        const encodedFilename = btoa("projects.json");
+        const response = await fetch(`api/getJson?f=${encodedFilename}`);
         const data = await response.json();
         setProjectsList(data);
       } catch (error) {
