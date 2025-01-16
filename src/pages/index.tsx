@@ -86,13 +86,13 @@ const Home: NextPageWithLayout = () => {
         </div>
       </section>
 
-      {/* Third Section */}
+      {/* Third Section - Experience */}
       <section className='snap-start h-screen w-full flex items-center justify-center'>
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
           <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-36 mb-4'>Employment Experience</p>
           {/* begin listing sections */}
           <div className='flex flex-col justify-around h-full relative overflow-hidden'>
-            <div className='basis-3/4 md:basis-1/2 transition-transform duration-500' style={{ transform: `translateX(-${pos * 100}%)` }}>
+            <div className='basis-2/4  transition-transform duration-500' style={{ transform: `translateX(-${pos * 100}%)` }}>
               {experienceData.map((experience, index) => (
                 <div key={index} className='absolute w-full h-full top-0 left-0 flex transition-transform duration-500' style={{ transform: `translateX(${index * 100}%)` }}>
                   <div className='md:flex h-fit border-l-white/30 border-l pl-4'>
@@ -124,7 +124,7 @@ const Home: NextPageWithLayout = () => {
               ))}
             </div>
             {/* Change section */}
-            <div className='flex basis-1/4 md:basis-1/2 justify-between items-start w-1/2 mx-auto mt-4'>
+            <div className='flex basis-1/4 justify-between items-center w-1/2 mx-auto mt-8'>
               <FontAwesomeIcon
                 icon={faChevronLeft}
                 className={`text-xl md:text-2xl ${pos === 0 ? 'text-transparent' : 'text-white/70 cursor-pointer hover:text-white'}`}
@@ -137,7 +137,18 @@ const Home: NextPageWithLayout = () => {
                 onClick={() => (pos !== experienceData.length - 1 ? setPos(pos + 1) : {})}
               />
             </div>
+            {/* Chevron */}
+            <div className="flex basis-1/4 justify-center items-center md:mb-4">
+              <FontAwesomeIcon icon={faChevronDown} className="text-2xl md:text-4xl animate-bounce" />
+            </div>
           </div>
+        </div>
+        
+      </section>
+
+      {/* Fourth Section - Skills  */}
+      <section className='snap-start h-screen w-full flex items-center justify-center'>
+        <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
         </div>
       </section>
     </div>
