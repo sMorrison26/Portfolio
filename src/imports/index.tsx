@@ -1,6 +1,5 @@
 import onAHill from '@/images/onAHill.webp'
 import pythonLogo from '@/images/Python.webp'
-import SkillLogo from '@/components/skillLogo/skillLogo.component'
 import cLogo from '@/images/C.webp'
 import cPlusPlusLogo from '@/images/C++.webp'
 import cSharpLogo from '@/images/Csharp.webp'
