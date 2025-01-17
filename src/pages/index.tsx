@@ -1,12 +1,11 @@
-import Layout from '@/components/layout/layout.component'
-import Image from 'next/image'
-import headshot from '@/images/headshot_2.webp'
 import { useState, useEffect, type ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import onAHill from '@/images/onAHill.webp'
-
+import Layout from '@/components/layout/layout.component'
+import SkillLogo from '@/components/skillLogo/skillLogo.component'
+import Image from 'next/image'
+import { Images } from '@/imports/index'
 
 const Home: NextPageWithLayout = () => {
 
@@ -39,7 +38,7 @@ const Home: NextPageWithLayout = () => {
               Hi, I&apos;m<br /> Sean.
             </p>
             <Image
-              src={headshot}
+              src={Images.headshot}
               className="object-cover w-1/2 md:w-1/5 rounded-md shadow-2xl shadow-theme-1 h-1/2 md:h-3/4"
               alt="Sean headshot"
             />
@@ -58,9 +57,9 @@ const Home: NextPageWithLayout = () => {
         <div className="flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4 pb-safe">
           <div id="pitch" className="flex flex-col md:flex-row">
             {/* Image Section */}
-            <figure className="basis-1/5 mb-2 sm:mb-4 md:mr-4 md:mb-0 mt-12 md:mt-36">
+            <figure className="basis-1/5 mb-2 sm:mb-4 md:mr-4 md:mb-0 mt-12 md:mt-32">
               <Image
-                src={onAHill}
+                src={Images.onAHill}
                 className="max-h-[20vh] md:min-h-[60vh] object-cover rounded-md shadow-xl shadow-theme-1"
                 alt="More Pictures of Sean"
               />
@@ -86,13 +85,13 @@ const Home: NextPageWithLayout = () => {
         </div>
       </section>
 
-      {/* Third Section */}
+      {/* Third Section - Experience */}
       <section className='snap-start h-screen w-full flex items-center justify-center'>
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
-          <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-36 mb-4'>Employment Experience</p>
+          <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-32 mb-4'>Employment Experience</p>
           {/* begin listing sections */}
           <div className='flex flex-col justify-around h-full relative overflow-hidden'>
-            <div className='basis-3/4 md:basis-1/2 transition-transform duration-500' style={{ transform: `translateX(-${pos * 100}%)` }}>
+            <div className='basis-2/4  transition-transform duration-500' style={{ transform: `translateX(-${pos * 100}%)` }}>
               {experienceData.map((experience, index) => (
                 <div key={index} className='absolute w-full h-full top-0 left-0 flex transition-transform duration-500' style={{ transform: `translateX(${index * 100}%)` }}>
                   <div className='md:flex h-fit border-l-white/30 border-l pl-4'>
@@ -124,7 +123,7 @@ const Home: NextPageWithLayout = () => {
               ))}
             </div>
             {/* Change section */}
-            <div className='flex basis-1/4 md:basis-1/2 justify-between items-start w-1/2 mx-auto mt-4'>
+            <div className='flex basis-1/4 justify-between items-center w-1/2 mx-auto mt-8'>
               <FontAwesomeIcon
                 icon={faChevronLeft}
                 className={`text-xl md:text-2xl ${pos === 0 ? 'text-transparent' : 'text-white/70 cursor-pointer hover:text-white'}`}
@@ -137,6 +136,52 @@ const Home: NextPageWithLayout = () => {
                 onClick={() => (pos !== experienceData.length - 1 ? setPos(pos + 1) : {})}
               />
             </div>
+            {/* Chevron */}
+            <div className="flex basis-1/4 justify-center items-center md:mb-4">
+              <FontAwesomeIcon icon={faChevronDown} className="text-2xl md:text-4xl animate-bounce" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      {/* Fourth Section - Skills  */}
+      <section className='snap-start h-screen w-full flex items-center justify-center'>
+        <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
+          <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-32 mb-4'>Technical Skills</p>
+          <p className='text-lg md:text-xl font-light text-white/70 mb-4'>Programming Languages</p>
+          <div className='grid grid-cols-5 md:grid-cols-10 gap-4 mb-8'>
+            <SkillLogo src={Images.pythonLogo} alt={'Python'} color='outline-yellow-500' />
+            <SkillLogo src={Images.cLogo} alt={'C'} color='outline-blue-600' />
+            <SkillLogo src={Images.cPlusPlusLogo} alt={'C++'} color='outline-blue-500' />
+            <SkillLogo src={Images.cSharpLogo} alt={'C#'} color='outline-purple-500' />
+            <SkillLogo src={Images.phpLogo} alt={'PHP'} color='outline-violet-500' />
+            <SkillLogo src={Images.SQLlogo} alt={'SQL'} color='outline-red-500' />
+            <SkillLogo src={Images.JavaScriptLogo} alt={'JavaScript'} color='outline-yellow-500' />
+            <SkillLogo src={Images.TypeScriptLogo} alt={'TypeScript'} color='outline-blue-400' />
+            <SkillLogo src={Images.JavaLogo} alt={'Java'} color='outline-red-500' />
+            <SkillLogo src={Images.BashLogo} alt={'Bash'} color='outline-white ' />
+          </div>
+          <p className='text-lg md:text-xl font-light text-white/70 mb-4'>Web Development</p>
+          <div className='grid grid-cols-5 md:grid-cols-10 gap-4 mb-8'>
+            <SkillLogo src={Images.HTMLLogo} alt={'HTML'} color='outline-red-500 bg-white' />
+            <SkillLogo src={Images.CSSLogo} alt={'CSS'} color='outline-blue-500 bg-white' />
+            <SkillLogo src={Images.NodeJsLogo} alt={'NodeJs'} color='outline-green-500' />
+            <SkillLogo src={Images.ReactJsLogo} alt={'ReactJs'} color='outline-blue-300' />
+            <SkillLogo src={Images.NextJsLogo} alt={'NextJs'} color='outline-black bg-white' />
+            <SkillLogo src={Images.DotNetLogo} alt={'DotNet'} color='outline-indigo-500' />
+            <SkillLogo src={Images.TailwindLogo} alt={'TailwindCSS'} color='outline-blue-400' />
+            <SkillLogo src={Images.AngularJsLogo} alt={'AngularJs'} color='outline-red-500' />
+            <SkillLogo src={Images.BootstrapLogo} alt={'Bootstrap'} color='outline-purple-500' />
+            <SkillLogo src={Images.ExpressLogo} alt={'Express'} color='outline-green-500 bg-white' />
+          </div>
+          <p className='text-lg md:text-xl font-light text-white/70 mb-4'>Tools</p>
+          <div className='grid grid-cols-5 md:grid-cols-10 gap-4 mb-8'>
+            <SkillLogo src={Images.GitLogo} alt={'Git'} color='outline-red-500' />
+            <SkillLogo src={Images.LinuxLogo} alt={'Linux'} color='outline-yellow-500 bg-white' />
+            <SkillLogo src={Images.AzureLogo} alt={'Azure'} color='outline-blue-500' />
+            <SkillLogo src={Images.AWSLogo} alt={'AWS'} color='outline-yellow-500 bg-white' />
+            <SkillLogo src={Images.MongoDB} alt={'MongoDB'} color='outline-green-500 bg-white' />
           </div>
         </div>
       </section>
