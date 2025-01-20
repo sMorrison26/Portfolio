@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Bug Bounty Hunting & Web Security Testing",
+    "issuer": "zSecurity",
+    "issueDate": "Jan 2025",
+    "expirationDate": "",
+    "credentialURL": "https://www.udemy.com/certificate/UC-ec8825d5-ea8c-4a80-8434-6a25883fae90/",
+    "credentialImage": "/assets/images/zSecurity.webp"
+  },
+  {
+    "name": "Learn Ethical Hacking From Scratch",
+    "issuer": "zSecurity",
+    "issueDate": "May 2024",
+    "expirationDate": "",
+    "credentialURL": "https://www.udemy.com/certificate/UC-dacadca7-f583-4eda-8bcf-abb7c718e62e/",
+    "credentialImage": "/assets/images/zSecurity.webp"
+  },
+  {
+    "name": "Oracle Cloud Infrastructure 2023 Certified Foundations Associate",
+    "issuer": "Oracle",
+    "issueDate": "Nov 2023",
+    "expirationDate": "Nov 2025",
+    "credentialURL": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=DBE4521FED307EF2D1F94A9AD8A6B26DB5E23D1045311F3B7F157F8C45928E09",
+    "credentialImage": "/assets/images/oracle.webp"
+  }
+  
+]
