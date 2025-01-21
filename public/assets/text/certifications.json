@@ -22,6 +22,22 @@
     "expirationDate": "Nov 2025",
     "credentialURL": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=DBE4521FED307EF2D1F94A9AD8A6B26DB5E23D1045311F3B7F157F8C45928E09",
     "credentialImage": "/assets/images/oracle.webp"
+  },
+  {
+    "name": "NCL Fall 2024 Team Game",
+    "issuer": "Cyber Skyline",
+    "issueDate": "Nov 2024",
+    "expirationDate": "",
+    "credentialURL": "https://cyberskyline.com/report/MYJCWQ0WBECT",
+    "credentialImage": "/assets/images/cyberSkyline.webp"
+  },
+  {
+    "name": "NCL Fall 2024 Individual Game",
+    "issuer": "Cyber Skyline",
+    "issueDate": "Oct 2024",
+    "expirationDate": "",
+    "credentialURL": "https://cyberskyline.com/report/1VHKQFY67V3H",
+    "credentialImage": "/assets/images/cyberSkyline.webp"
   }
   
 ]

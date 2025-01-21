@@ -215,7 +215,7 @@ const Home: NextPageWithLayout = () => {
           <div className='flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-[60vh]'>
             {certData.map((cert, index) => (
               <div key={index} className='flex justify-start items-center mb-4 md:mb-8'>
-                <Image src={cert.credentialImage} alt="name" width={100} height={100} className='max-h-[10vh] max-w-[10vw] md:max-h-[16vh] md:max-w-[16vw] object-cover rounded-md shadow-sm shadow-theme-1  mr-4' />
+                <Image src={cert.credentialImage} alt="name" width={100} height={100} className='max-h-[14vh] max-w-[14vw] md:max-h-[16vh] md:max-w-[16vw] object-cover rounded-md shadow-sm shadow-theme-1  mr-4' />
                 <div className='font-light w-4/5'>
                   <a href={cert.credentialURL} target='_blank' className='text-medium md:text-xl hover:underline'>{cert.name}</a>
                   <p className='text-xs md:text-medium text-white/70'>{cert.issuer}</p>
