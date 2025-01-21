@@ -12,9 +12,12 @@ const Home: NextPageWithLayout = () => {
   // Current position for experience_data array
   const [pos, setPos] = useState<number>(0);
   const [experienceData, setExperienceData] = useState([]);
+  const [certData, setCertData] = useState([]);
 
   //get experience data
   useEffect(() => {
+
+    //function to get employment experience data
     async function fetchExperienceData() {
       try {
         const encodedFilename = btoa('experience.json');
@@ -25,7 +28,22 @@ const Home: NextPageWithLayout = () => {
         console.error("Error loading experience data.");
       }
     };
+
+    //function to get licenses and cetification data 
+    async function fetchCertData() {
+      try {
+        const encodedFilename = btoa('certifications.json');
+        const response = await fetch(`api/getJson?f=${encodedFilename}`);
+        const data = await response.json();
+        setCertData(data);
+      } catch {
+        console.error("Error loading certifications data.");
+      }
+    };
+
+
     fetchExperienceData();
+    fetchCertData();
   }, []);
 
   return (
@@ -100,7 +118,7 @@ const Home: NextPageWithLayout = () => {
                         src={experience.company_logo}
                         width={100}
                         height={100}
-                        className="max-h-[20vh] max-w-[20vw] md:max-h-[10vh] md:max-w-[10vw] object-cover rounded-md shadow-sm shadow-theme-1"
+                        className="max-h-[20vh] max-w-[20vw] object-cover rounded-md shadow-sm shadow-theme-1"
                         alt={experience.company}
                       />
                     </figure>
@@ -182,6 +200,29 @@ const Home: NextPageWithLayout = () => {
             <SkillLogo src={Images.AzureLogo} alt={'Azure'} color='outline-blue-500' />
             <SkillLogo src={Images.AWSLogo} alt={'AWS'} color='outline-yellow-500 bg-white' />
             <SkillLogo src={Images.MongoDB} alt={'MongoDB'} color='outline-green-500 bg-white' />
+          </div>
+          {/* Chevron */}
+          <div className="flex basis-1/4 justify-center items-center md:mb-4">
+            <FontAwesomeIcon icon={faChevronDown} className="text-2xl md:text-4xl animate-bounce" />
+          </div>
+        </div>
+      </section>
+
+      {/* Fifth Section - Licenses & Certifications */}
+      <section className='snap-start h-screen w-full flex items-center justify-center'>
+        <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
+          <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-32 mb-4'>Licenses & Certifcations</p>
+          <div className='flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-[60vh]'>
+            {certData.map((cert, index) => (
+              <div key={index} className='flex justify-start items-center mb-4 md:mb-8'>
+                <Image src={cert.credentialImage} alt="name" width={100} height={100} className='max-h-[14vh] max-w-[14vw] md:max-h-[16vh] md:max-w-[16vw] object-cover rounded-md shadow-sm shadow-theme-1  mr-4' />
+                <div className='font-light w-4/5'>
+                  <a href={cert.credentialURL} target='_blank' className='text-medium md:text-xl hover:underline'>{cert.name}</a>
+                  <p className='text-xs md:text-medium text-white/70'>{cert.issuer}</p>
+                  <p className='text-xs md:text-medium text-white/70'>Issued {cert.issueDate}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
