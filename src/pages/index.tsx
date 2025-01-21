@@ -201,6 +201,10 @@ const Home: NextPageWithLayout = () => {
             <SkillLogo src={Images.AWSLogo} alt={'AWS'} color='outline-yellow-500 bg-white' />
             <SkillLogo src={Images.MongoDB} alt={'MongoDB'} color='outline-green-500 bg-white' />
           </div>
+          {/* Chevron */}
+          <div className="flex basis-1/4 justify-center items-center md:mb-4">
+            <FontAwesomeIcon icon={faChevronDown} className="text-2xl md:text-4xl animate-bounce" />
+          </div>
         </div>
       </section>
 
