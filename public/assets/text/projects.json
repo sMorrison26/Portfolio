@@ -24,6 +24,14 @@
     "title": "Hackathons",
     "projects": [
       {
+        "name": "MasterEDU",
+        "description": "MasterEDU is an online AI-Powered learning platform that teachers can use to promote the mastery of any subject for every student. Master EDU uses AI to create tailored materials to supplement classwork and help students study for Mastery.",
+        "github": "https://github.com/HenryRobb/aiforchange24",
+        "link": "https://github.com/HenryRobb/aiforchange24",
+        "imagesrc": "/assets/images/masteredu.webp",
+        "date": "June 2024 - June 2024"
+      },
+      {
         "name": "Finance Friends - Trip to Troy",
         "description": "Trip to Troy is game designed to help students learn about the value of budgeting and the difficulties of making everday financial decisions. The game also seeks to expose users to the local economy of Troy, and promote small minority-owned businesses.",
         "github": "https://github.com/sMorrison26/FinanceFriends",
