@@ -116,6 +116,7 @@ const CharityFinder: React.FC = () => {
       $(this).show();
     });
   };
+
   useEffect(() => {
     resetDivs();
     loadDiscover();

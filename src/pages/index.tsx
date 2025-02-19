@@ -1,4 +1,4 @@
-import { useState, useEffect, type ReactElement } from 'react'
+import { useState, useEffect, type ReactElement, Key } from 'react'
 import type { NextPageWithLayout } from './_app'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -129,8 +129,8 @@ const Home: NextPageWithLayout = () => {
                       <p className='text-sm md:text-lg my-2 sm:my-3'>{experience.company}</p>
                       {/* Summary */}
                       <div className='text-xs md:text-medium font-light mt-2'>
-                        <ul className="list-disc list-inside">
-                          {experience.summary.map((point, index) => (
+                        <ul className="list-disc list-inside text-white/70">
+                          {experience.summary.map((point: string, index: Key) => (
                             <li key={index}>{point}</li>
                           ))}
                         </ul>
@@ -213,7 +213,7 @@ const Home: NextPageWithLayout = () => {
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
           <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-32 mb-4'>Licenses & Certifcations</p>
           <div className='flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-[60vh]'>
-            {certData.map((cert, index) => (
+            {certData.map((cert, index: Key) => (
               <div key={index} className='flex justify-start items-center mb-4 md:mb-8'>
                 <Image src={cert.credentialImage} alt={cert.issuer} width={100} height={100} className='max-h-[14vh] max-w-[14vw] md:max-h-[16vh] md:max-w-[16vw] object-cover rounded-md shadow-sm shadow-theme-1  mr-4' />
                 <div className='font-light w-4/5'>
@@ -222,6 +222,7 @@ const Home: NextPageWithLayout = () => {
                   <p className='text-xs md:text-medium text-white/70'>Issued {cert.issueDate}</p>
                 </div>
               </div>
+
             ))}
           </div>
         </div>
