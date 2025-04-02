@@ -47,7 +47,7 @@ const Home: NextPageWithLayout = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
+    <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory no-scrollbar">
       {/* First section - Intro */}
       <section className="snap-start h-screen w-full flex items-center justify-center">
         <div className="flex flex-col p-4 h-full mx-auto sm:w-3/4 md:w-4/5">
@@ -85,7 +85,7 @@ const Home: NextPageWithLayout = () => {
             {/* Text Section */}
             <div className="flex flex-col basis-4/5 h-full font-light mt-4 sm:mt-8 md:mt-36 md:ml-8 md:max-h-[60vh]">
               <p className="text-2xl sm:text-3xl md:text-4xl mb-4">Meet Sean.</p>
-              <div className="flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-full">
+              <div className="flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-full no-scrollbar">
                 <p className="text-xs md:text-medium text-white/60">
                   <span className='font-bold'>Hi!</span> My name is Sean, and I am a junior studying <span className='font-bold'>Information Technology & Web Science</span> at <span className='font-bold'>RPI</span>, with minors in both <span className='font-bold'>Management</span> and <span className='font-bold'>Computer Science</span>. I am passionate about everything IT, and over the course of my career, I&apos;ve fallen in love with building <span className='font-bold'>robust software</span>—mainly in the form of web applications. My concentration is in the field of <span className='font-bold'>information security</span>, giving me strong knowledge of what it takes to develop <span className='font-bold'>secure</span> and <span className='font-bold'>reliable</span> software. With two internship experiences, I have honed my skills in developing <span className='font-bold'>scalable</span> solutions and have contributed to building processes that impact the software development life cycle.
                 </p>
@@ -212,7 +212,7 @@ const Home: NextPageWithLayout = () => {
       <section className='snap-start h-screen w-full flex items-center justify-center'>
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
           <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-32 mb-4'>Licenses & Certifcations</p>
-          <div className='flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-[60vh]'>
+          <div className='flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-[60vh] no-scrollbar'>
             {certData.map((cert, index: Key) => (
               <div key={index} className='flex justify-start items-center mb-4 md:mb-8'>
                 <Image src={cert.credentialImage} alt={cert.issuer} width={100} height={100} className='max-h-[14vh] max-w-[14vw] md:max-h-[16vh] md:max-w-[16vw] object-cover rounded-md shadow-sm shadow-theme-1  mr-4' />

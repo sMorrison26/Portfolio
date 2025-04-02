@@ -23,32 +23,21 @@
   }
 }
 
-:root {
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
 }
 
-@layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  *::-webkit-scrollbar {
-      display: none !important;
-  }
- /* Hide scrollbar for IE, Edge and Firefox */
-  * {
-      -ms-overflow-style: none !important;  /* IE and Edge */
-      scrollbar-width: none !important;  /* Firefox */
-  }
-}
 .test {
   min-height: -webkit-fill-available;
 }
 nav#header {
   height: 10vh; /* Adjust the value as needed */
-}
-
-/* Safe area bottom */
-.safe-bottom {
-  position: relative;
-  padding-bottom: -webkit-fill-available;
 }
 
 .box img {
@@ -98,5 +87,3 @@ nav#header {
   font-size: 50px;
   font-weight: 100;
 }
-
-
