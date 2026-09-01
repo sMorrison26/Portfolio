@@ -211,7 +211,7 @@ const Home: NextPageWithLayout = () => {
       {/* Fifth Section - Licenses & Certifications */}
       <section className='snap-start h-screen w-full flex items-center justify-center'>
         <div className='flex flex-col w-full h-full mx-auto sm:w-3/4 md:w-4/5 px-4 pt-4'>
-          <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-32 mb-4'>Licenses & Certifcations</p>
+          <p className='text-2xl md:text-3xl font-light text-white mt-12 md:mt-32 mb-4'>Licenses & Certifications</p>
           <div className='flex flex-col overflow-y-scroll px-4 py-2 border-x border-white/30 max-h-[40vh] md:max-h-[60vh] no-scrollbar'>
             {certData.map((cert, index: Key) => (
               <div key={index} className='flex justify-start items-center mb-4 md:mb-8'>
