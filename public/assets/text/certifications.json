@@ -1,9 +1,33 @@
 [
   {
+    "name": "Cisco Certified Network Professional Automation (CCNP Automation)",
+    "issuer": "Cisco",
+    "issueDate": "Jul 2026",
+    "expirationDate": "Jul 2029",
+    "credentialURL": "https://www.credly.com/badges/f2e892f5-822a-4891-96d3-f78953bbf5e4/public_url",
+    "credentialImage": "/assets/images/ccnpauto.webp"
+  },
+  {
+    "name": "Cisco Certified Network Associate Automation (CCNA Automation)",
+    "issuer": "Cisco",
+    "issueDate": "Jul 2025",
+    "expirationDate": "Jul 2029",
+    "credentialURL": "https://www.credly.com/badges/3df5f42a-d59b-4356-9a31-80788b2c600b/public_url",
+    "credentialImage": "/assets/images/ccnaauto.webp"
+  },
+  {
+    "name": "Cisco Certified Network Associate (CCNA)",
+    "issuer": "Cisco",
+    "issueDate": "Jul 2025",
+    "expirationDate": "Jul 2029",
+    "credentialURL": "https://www.credly.com/badges/6c184c65-4f3c-4104-9f41-35feb53c4c24/public_url",
+    "credentialImage": "/assets/images/ccna.webp"
+  },
+  {
     "name": "Bug Bounty Hunting & Web Security Testing",
     "issuer": "zSecurity",
     "issueDate": "Jan 2025",
-    "expirationDate": "",
+    "expirationDate": "Jul 2029",
     "credentialURL": "https://www.udemy.com/certificate/UC-ec8825d5-ea8c-4a80-8434-6a25883fae90/",
     "credentialImage": "/assets/images/zSecurity.webp"
   },
