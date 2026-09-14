@@ -128,13 +128,15 @@ const Home: NextPageWithLayout = () => {
                       <p className='text-xs md:text-medium font-light text-white/70'>{experience.date}</p>
                       <p className='text-sm md:text-lg my-2 sm:my-3'>{experience.company}</p>
                       {/* Summary */}
-                      <div className='text-xs md:text-medium font-light mt-2'>
-                        <ul className="list-disc list-inside text-white/70">
-                          {experience.summary.map((point: string, index: Key) => (
-                            <li key={index}>{point}</li>
-                          ))}
-                        </ul>
+                      {experience.summary.length > 0 && (
+                        <div className='text-xs md:text-medium font-light mt-2'>
+                          <ul className="list-disc list-inside text-white/70">
+                            {experience.summary.map((point: string, index: Key) => (
+                              <li key={index}>{point}</li>
+                            ))}
+                          </ul>
                       </div>
+                      )}
                     </div>
                   </div>
                 </div>
