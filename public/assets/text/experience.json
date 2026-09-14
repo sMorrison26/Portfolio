@@ -1,5 +1,16 @@
 [
   {
+    "title": "Consulting Engineer Intern | Enterprise Networking",
+    "company": "Cisco",
+    "company_logo": "/assets/images/cisco.webp",
+    "date": "May 2025 - July 2026",
+    "summary": [
+      "Integrated modules into Terraform provider to allow for automated network infrastructure deployment for Cisco IOS XE devices.",
+      "Accelerated onboarding program for Net as Code project through documentation and hands-on sessions for six peers.",
+      "Assisted in the planning and placement of wireless access points throughout customer site, optimizing for efficient coverage."
+    ]
+  },
+  {
     "title": "Development Operations Engineer Intern",
     "company": "Communications Test Design Inc.",
     "company_logo": "/assets/images/CTDI.webp",
